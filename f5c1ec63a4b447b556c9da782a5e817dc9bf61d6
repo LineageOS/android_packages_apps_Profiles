@@ -16,6 +16,24 @@
       "revId": "f5c1ec63a4b447b556c9da782a5e817dc9bf61d6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da7fb54a_762096f8",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 9045
+      },
+      "writtenOn": "2015-04-25T06:45:11Z",
+      "side": 1,
+      "message": "Inner handler attaches to the main thread, so it\u0027s possible it might live outside the context of the service and not let the service be garbage collected.",
+      "parentUuid": "da7fb54a_96699a8e",
+      "revId": "f5c1ec63a4b447b556c9da782a5e817dc9bf61d6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
