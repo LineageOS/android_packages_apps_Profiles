@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da7fb54a_96699a8e",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 9621
+      },
+      "writtenOn": "2015-04-25T05:17:39Z",
+      "side": 1,
+      "message": "Why a WeakReference here? If the ProfilesTrustAgent service already holds a reference to this handler, in a low memory condition the WeakReference to the service could be released, but the Service would still hold the handler in memory if it hasn\u0027t been garbage collected itself.",
+      "revId": "f5c1ec63a4b447b556c9da782a5e817dc9bf61d6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
