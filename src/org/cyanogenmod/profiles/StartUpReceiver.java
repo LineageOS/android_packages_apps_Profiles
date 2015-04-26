@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import com.android.internal.widget.LockPatternUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,6 +39,9 @@ public class StartUpReceiver extends BroadcastReceiver {
         ComponentName profileTrustAgent = new ComponentName(context, ProfilesTrustAgent.class);
 
         List<ComponentName> enabledTrustAgents = lockUtils.getEnabledTrustAgents();
+        if (enabledTrustAgents == null) {
+            enabledTrustAgents = new ArrayList<>();
+        }
         if (!enabledTrustAgents.contains(profileTrustAgent)) {
             enabledTrustAgents.add(profileTrustAgent);
             lockUtils.setEnabledTrustAgents(enabledTrustAgents);
