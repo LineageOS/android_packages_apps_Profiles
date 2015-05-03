@@ -25,4 +25,6 @@ LOCAL_CERTIFICATE := platform
 
 LOCAL_PACKAGE_NAME := Profiles
 
+LOCAL_STATIC_JAVA_LIBRARIES := org.cyanogenmod.platform.sdk
+
 include $(BUILD_PACKAGE)
