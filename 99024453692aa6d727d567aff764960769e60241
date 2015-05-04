@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_9fcff3b2",
+        "filename": "src/org/cyanogenmod/profiles/cal/CalendarServiceObserver.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-05-04T18:54:18Z",
+      "side": 1,
+      "message": "This looks like those strings want i18n, doesn\u0027t it?\n\n(Which in turn raises more questions, like what\u0027s happening if the language is changed after the triggers are registered)",
+      "revId": "99024453692aa6d727d567aff764960769e60241",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a89bdaa_bfd4b747",
+        "filename": "src/org/cyanogenmod/profiles/cal/CalendarServiceObserver.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-05-04T18:54:18Z",
+      "side": 1,
+      "message": "Scheduling every 15 minutes seems a little excessive - after all, you already have processed the events of the next 24 hours.\nIf this is for handling DB updates, a better solution would be giving plugins an API to register content observers and broadcast receivers, similar to what DashClock does.",
+      "revId": "99024453692aa6d727d567aff764960769e60241",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
