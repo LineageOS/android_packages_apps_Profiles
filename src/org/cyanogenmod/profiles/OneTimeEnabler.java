@@ -30,7 +30,7 @@ import java.util.List;
  * Boot receiver which checks enables the ProfilesTrustAgent once, then disables itself.
  * We only need to do this once to make sure we don't override if it was disabled at a later point.
  */
-public class StartUpReceiver extends BroadcastReceiver {
+public class OneTimeEnabler extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -48,7 +48,7 @@ public class StartUpReceiver extends BroadcastReceiver {
         }
 
         // disable the receiver once it has enabled ProfilesTrustAgent
-        ComponentName name = new ComponentName(context, StartUpReceiver.class);
+        ComponentName name = new ComponentName(context, OneTimeEnabler.class);
         PackageManager pm = context.getPackageManager();
         pm.setComponentEnabledSetting(name,
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
