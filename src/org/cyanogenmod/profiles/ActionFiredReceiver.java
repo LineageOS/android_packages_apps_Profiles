@@ -19,7 +19,8 @@ package org.cyanogenmod.profiles;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import cyanogenmod.app.profiles.ProfilePluginManager;
+
+import cyanogenmod.app.ProfilePluginManager;
 
 /**
  * Receives Broadcasts from frameworks when a new profile has activated and Custom Actions have
@@ -30,11 +31,13 @@ public class ActionFiredReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         ProfilePluginManager manager = ProfilePluginManager.getInstance(context);
         String[] actionStrings = intent.getStringArrayExtra("customActions");
-        for (String actionString : actionStrings) {
-            String[] split = actionString.split("/");
-            String id = split[0];
-            String state = split[1];
-            manager.fireAction(id, state);
+        if (actionStrings != null) {
+            for (String actionString : actionStrings) {
+                String[] split = actionString.split("/");
+                String id = split[0];
+                String state = split[1];
+                manager.fireAction(id, state);
+            }
         }
     }
 }
