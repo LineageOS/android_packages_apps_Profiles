@@ -16,8 +16,6 @@
 
 package org.cyanogenmod.profiles;
 
-import android.app.Profile;
-import android.app.ProfileManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +24,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.service.trust.TrustAgentService;
 import android.util.Log;
+
+import cyanogenmod.app.Profile;
+import cyanogenmod.app.ProfileManager;
 
 import java.lang.ref.WeakReference;
 
