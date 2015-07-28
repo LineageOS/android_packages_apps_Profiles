@@ -16,6 +16,7 @@
 
 package org.cyanogenmod.profiles;
 
+import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -90,8 +91,16 @@ public class ProfilesTrustAgent extends TrustAgentService {
     }
 
     private void handleApplyCurrentProfileState() {
+        final DevicePolicyManager devicePolicyManager =
+                (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
+        if (devicePolicyManager != null && devicePolicyManager.requireSecureKeyguard()) {
+            revokeTrust();
+            return;
+        }
+
         Profile p = mProfileManager.getActiveProfile();
-        int lockscreenState = p != null ? p.getScreenLockMode() : Profile.LockMode.DEFAULT;
+        int lockscreenState = p != null ? p.getScreenLockMode().getValue()
+                : Profile.LockMode.DEFAULT;
         switch (lockscreenState) {
             case Profile.LockMode.DISABLE:
             case Profile.LockMode.DEFAULT:
