@@ -85,11 +85,6 @@ public class ProfilesTrustAgent extends TrustAgentService {
         mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
     }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        return START_STICKY;
-    }
-
     private void handleApplyCurrentProfileState() {
         final DevicePolicyManager devicePolicyManager =
                 (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
