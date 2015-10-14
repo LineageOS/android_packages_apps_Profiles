@@ -86,12 +86,12 @@ public class ProfilesTrustAgent extends TrustAgentService {
     }
 
     private void handleApplyCurrentProfileState() {
-        final DevicePolicyManager devicePolicyManager =
+        /*final DevicePolicyManager devicePolicyManager =
                 (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
         if (devicePolicyManager != null && devicePolicyManager.requireSecureKeyguard()) {
             revokeTrust();
             return;
-        }
+        }*/
 
         Profile p = mProfileManager.getActiveProfile();
         int lockscreenState = p != null ? p.getScreenLockMode().getValue()

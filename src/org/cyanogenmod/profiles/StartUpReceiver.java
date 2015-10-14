@@ -38,14 +38,14 @@ public class StartUpReceiver extends BroadcastReceiver {
         LockPatternUtils lockUtils = new LockPatternUtils(context);
         ComponentName profileTrustAgent = new ComponentName(context, ProfilesTrustAgent.class);
 
-        List<ComponentName> enabledTrustAgents = lockUtils.getEnabledTrustAgents();
+        /*List<ComponentName> enabledTrustAgents = lockUtils.getEnabledTrustAgents();
         if (enabledTrustAgents == null) {
             enabledTrustAgents = new ArrayList<>();
         }
         if (!enabledTrustAgents.contains(profileTrustAgent)) {
             enabledTrustAgents.add(profileTrustAgent);
             lockUtils.setEnabledTrustAgents(enabledTrustAgents);
-        }
+        }*/
 
         // disable the receiver once it has enabled ProfilesTrustAgent
         ComponentName name = new ComponentName(context, StartUpReceiver.class);
