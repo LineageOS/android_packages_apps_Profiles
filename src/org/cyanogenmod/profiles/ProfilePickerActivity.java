@@ -142,7 +142,7 @@ public final class ProfilePickerActivity extends AlertActivity implements
 
         p.mTitle = intent.getCharSequenceExtra(ProfileManager.EXTRA_PROFILE_TITLE);
         if (p.mTitle == null) {
-            p.mTitle = getString(com.android.internal.R.string.profile_picker_title);
+            p.mTitle = getString(R.string.profile_picker_title);
         }
 
         setupAlert();
@@ -204,7 +204,7 @@ public final class ProfilePickerActivity extends AlertActivity implements
     }
 
     private int addNoneItem(ListView listView) {
-        return addStaticItem(listView, com.android.internal.R.string.profile_none);
+        return addStaticItem(listView, R.string.profile_none);
     }
 
     /*
