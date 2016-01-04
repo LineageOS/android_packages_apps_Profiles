@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Perfis de provedor de confiança</string>
-  <string name="profile_trust_agent_title">Perfis de agente de confiança</string>
-  <string name="profile_trust_agent_summary">Permite que os perfis desativem temporariamente a proteção do ecrã de bloqueio</string>
-  <string name="trust_by_profile">Perfil confiável</string>
+  <string name="app_label">Provedor de Confiança de Perfis</string>
+  <string name="profile_trust_agent_title">Agente de Confiança de Perfis</string>
+  <string name="profile_trust_agent_summary">Permite que os Perfis desativem temporariamente a proteção do ecrã de bloqueio</string>
+  <string name="trust_by_profile">Perfil Confiável</string>
 </resources>
