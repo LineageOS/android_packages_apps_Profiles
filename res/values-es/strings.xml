@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profil Güven Sağlayıcısı</string>
-  <string name="profile_trust_agent_title">Profil Güven Ajanı</string>
-  <string name="profile_trust_agent_summary">Profillere geçici olarak kilit ekranı korumasını devre dışı bırakma izni verir</string>
-  <string name="trust_by_profile">Profile göre güveniliyor</string>
+  <string name="app_label">Proveedor de perfiles de confianza</string>
+  <string name="profile_trust_agent_title">Agente de perfiles de confianza</string>
+  <string name="profile_trust_agent_summary">Permite que los Perfiles desactiven temporalmente la protección de la pantalla de bloqueo</string>
+  <string name="trust_by_profile">Perfil de confianza</string>
 </resources>
