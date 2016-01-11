@@ -17,6 +17,8 @@
 -->
 <resources>
   <string name="app_label">Trust-Agents-provider</string>
+  <string name="profile_picker_title">Profielen</string>
+  <string name="profile_none">Geen</string>
   <string name="profile_trust_agent_title">Trust-Agents-profielen</string>
   <string name="profile_trust_agent_summary">Hiermee kunnen profielen tijdelijk het vergrendelscherm uitschakelen</string>
   <string name="trust_by_profile">Vertrouwd door profiel</string>

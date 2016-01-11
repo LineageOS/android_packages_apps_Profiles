@@ -17,6 +17,8 @@
 -->
 <resources>
   <string name="app_label">Ponudnik zaupanja za profile</string>
+  <string name="profile_picker_title">Profili</string>
+  <string name="profile_none">Brez</string>
   <string name="profile_trust_agent_title">Posrednik zaupanja za profile</string>
   <string name="profile_trust_agent_summary">Dovoli profilom, da začasno onemogočijo zaklepanje zaslona</string>
   <string name="trust_by_profile">Zaupanje po profilu</string>

@@ -16,10 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Proveedor de perfiles de confianza</string>
-  <string name="profile_picker_title">Perfiles</string>
-  <string name="profile_none">Ninguno</string>
-  <string name="profile_trust_agent_title">Agente de perfiles de confianza</string>
-  <string name="profile_trust_agent_summary">Permite que los Perfiles desactiven temporalmente la protección de la pantalla de bloqueo</string>
-  <string name="trust_by_profile">Perfil de confianza</string>
+  <string name="app_label">Cấu hình nhà cung cấp đáng tin cậy</string>
+  <string name="profile_trust_agent_title">Cấu hình đại lý đáng tin cậy</string>
+  <string name="profile_trust_agent_summary">Cho phép cấu hình để tạm thời vô hiệu hóa bảo vệ màn hình khóa</string>
+  <string name="trust_by_profile">Đáng tin cậy nhờ vào cấu hình</string>
 </resources>

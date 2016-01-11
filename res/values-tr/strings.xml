@@ -17,7 +17,9 @@
 -->
 <resources>
   <string name="app_label">Profil Güven Sağlayıcısı</string>
+  <string name="profile_picker_title">Profiller</string>
+  <string name="profile_none">Yok</string>
   <string name="profile_trust_agent_title">Profil Güven Ajanı</string>
   <string name="profile_trust_agent_summary">Profillere geçici olarak kilit ekranı korumasını devre dışı bırakma izni verir</string>
-  <string name="trust_by_profile">Profil güveniyor</string>
+  <string name="trust_by_profile">Profile göre güveniliyor</string>
 </resources>
