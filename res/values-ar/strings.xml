@@ -16,7 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Anbieter für vertrauenswürdige Profile</string>
-  <string name="profile_trust_agent_title">Agent für vertrauenswürdige Profile</string>
-  <string name="profile_trust_agent_summary">Erlaubt Profilen, die Bildschirmsperre vorübergehend zu deaktivieren</string>
+  <string name="app_label">موفر ثقة ملفات التعريف</string>
+  <string name="profile_trust_agent_title">الوكيل الموثوق لملفات التعريف</string>
+  <string name="profile_trust_agent_summary">السماح لملفات التعريف بتعطيل حماية شاشة التأمين بشكل مؤقت</string>
+  <string name="trust_by_profile">موثوق به بواسطة ملف التعريف</string>
 </resources>
