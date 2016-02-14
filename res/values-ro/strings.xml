@@ -16,5 +16,8 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_label">Furnizor Profiluri de încredere</string>
   <string name="profile_picker_title">Profiluri</string>
+  <string name="profile_none">Niciunul</string>
+  <string name="profile_trust_agent_summary">Permite Profiluri să dezactiveze teporar ecranul de protecție</string>
 </resources>
