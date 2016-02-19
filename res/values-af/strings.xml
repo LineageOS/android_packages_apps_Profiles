@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Поставщик доверенных профилей</string>
-  <string name="profile_trust_agent_title">Агент доверенных профилей</string>
-  <string name="profile_trust_agent_summary">Позволяет профилям временно отключать экран блокировки</string>
-  <string name="trust_by_profile">Доверенный профиль</string>
+  <string name="app_label">Profiel Vertroue Verskaffer</string>
+  <string name="profile_trust_agent_title">Profiele Vertroue Agent</string>
+  <string name="profile_trust_agent_summary">Laat Profiele tydelik slot skerm beskerming afskakel</string>
+  <string name="trust_by_profile">Vertrou deur profiel</string>
 </resources>
