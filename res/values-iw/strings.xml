@@ -20,6 +20,6 @@
   <string name="profile_picker_title">פרופילים</string>
   <string name="profile_none">אין</string>
   <string name="profile_trust_agent_title">סוכן מהימנות פרופילים</string>
-  <string name="profile_trust_agent_summary">מאפשר לפרופילים לבטל באופן זמני את הגנת נעילת המסך</string>
+  <string name="profile_trust_agent_summary">מאפשר לפרופילים להשבית באופן זמני את הגנת נעילת המסך</string>
   <string name="trust_by_profile">מהימן לפי פרופיל</string>
 </resources>
