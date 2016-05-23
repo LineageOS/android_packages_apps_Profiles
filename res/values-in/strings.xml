@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Provedor de perfis de confiança</string>
-  <string name="profile_trust_agent_title">Agente de perfis de confiança</string>
-  <string name="profile_trust_agent_summary">Permite que os Perfis desativem temporariamente a proteção da tela de bloqueio</string>
-  <string name="trust_by_profile">Confiável por perfil</string>
+  <string name="app_label">Profil Penyedia Tepercaya</string>
+  <string name="profile_trust_agent_title">Profil Agen Tepercaya</string>
+  <string name="profile_trust_agent_summary">Izinkan Profile untuk menonaktifkan sementara proteksi kunci layar</string>
+  <string name="trust_by_profile">Dipercayai oleh Profil</string>
 </resources>

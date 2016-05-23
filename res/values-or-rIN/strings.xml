@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Provedor de perfis de confiança</string>
-  <string name="profile_trust_agent_title">Agente de perfis de confiança</string>
-  <string name="profile_trust_agent_summary">Permite que os Perfis desativem temporariamente a proteção da tela de bloqueio</string>
-  <string name="trust_by_profile">Confiável por perfil</string>
+  <string name="app_label">ଭରସା ପ୍ରଦାନ୍କାରୀଙ୍କ ପ୍ରୋଫାଇ‌ଲ୍‍ କରିଥାଏ</string>
+  <string name="profile_trust_agent_title">ଭରସା ଏଜେଣ୍ଟଙ୍କ ପ୍ରୋଫାଇ‌ଲ୍‍ କରିଥାଏ</string>
+  <string name="profile_trust_agent_summary">ଲକ୍‍ ସ୍କ୍ରିନ୍‍ ପ୍ରୋଫାଇଲ୍‍ ସୁରଷାକୁ ଅଷମ କରିବା ପାଇଁ ପ୍ରୋଫାଇଲ୍‍କୁ ଅନୁମତି ଦେଇଥାଏ</string>
+  <string name="trust_by_profile">ପ୍ରୋଫାଇଲ୍‍ ଦ୍ୱାରା ଭରସାଯୋଗ୍ୟ</string>
 </resources>

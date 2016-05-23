@@ -17,7 +17,7 @@
 -->
 <resources>
   <string name="app_label">Поставщик доверенных профилей</string>
-  <string name="profile_trust_agent_title">Агент доверенных профилей</string>
+  <string name="profile_trust_agent_title">Агент доверия профилей</string>
   <string name="profile_trust_agent_summary">Позволяет профилям временно отключать экран блокировки</string>
   <string name="trust_by_profile">Доверенный профиль</string>
 </resources>
