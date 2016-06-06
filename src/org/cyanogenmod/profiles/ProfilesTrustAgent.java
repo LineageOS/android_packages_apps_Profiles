@@ -16,20 +16,31 @@
 
 package org.cyanogenmod.profiles;
 
-import android.app.admin.DevicePolicyManager;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.database.ContentObserver;
+import android.net.Uri;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
+import android.net.wifi.WifiSsid;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.UserHandle;
 import android.service.trust.TrustAgentService;
+import android.util.ArraySet;
 import android.util.Log;
-
 import cyanogenmod.app.Profile;
 import cyanogenmod.app.ProfileManager;
+import cyanogenmod.providers.CMSettings;
 
 import java.lang.ref.WeakReference;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Profiles Trust Agent
@@ -40,49 +51,74 @@ import java.lang.ref.WeakReference;
 public class ProfilesTrustAgent extends TrustAgentService {
 
     private static final String TAG = ProfilesTrustAgent.class.getSimpleName();
-    private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
+    private static final boolean DEBUG = true;
 
     private static final int GRANT_DURATION_MS = 1000 * 60 * 5; // 5 minutes
 
     private static final int MSG_UPDATE_STATE = 100;
+    private static final int MSG_ON_AGENT_CREATED = 101;
+    private static final int MSG_ON_TRIGGER_STATE_CHANGED = 102;
+    private static final int MSG_ON_USER_SWITCH = 103;
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
+            final String action = intent.getAction();
+            if (ProfileManager.INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED.equals(action)) {
+                mHandler.obtainMessage(MSG_ON_TRIGGER_STATE_CHANGED,
+                        intent.getExtras()).sendToTarget();
+            } else if (Intent.ACTION_USER_FOREGROUND.equals(action)) {
+                mHandler.sendEmptyMessage(MSG_ON_USER_SWITCH);
+            } else {
+                mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
+            }
         }
     };
 
     private ProfileManager mProfileManager;
     private ProfileHandler mHandler;
+    private SystemProfilesSettingsObserver mObserver;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mProfileManager = ProfileManager.getInstance(this);
-        mHandler = new ProfileHandler(ProfilesTrustAgent.this);
+        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
+            mProfileManager = ProfileManager.getInstance(this);
+            mHandler = new ProfileHandler(ProfilesTrustAgent.this);
 
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(ProfileManager.INTENT_ACTION_PROFILE_SELECTED);
-        filter.addAction(ProfileManager.INTENT_ACTION_PROFILE_UPDATED);
+            IntentFilter filter = new IntentFilter();
+            filter.addAction(ProfileManager.INTENT_ACTION_PROFILE_SELECTED);
+            filter.addAction(ProfileManager.INTENT_ACTION_PROFILE_UPDATED);
+            filter.addAction(ProfileManager.INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED);
+            filter.addAction(Intent.ACTION_USER_FOREGROUND);
 
-        registerReceiver(mReceiver, filter);
-
-        setManagingTrust(true);
+            registerReceiver(mReceiver, filter);
+            setManagingTrust(true);
+            mObserver = new SystemProfilesSettingsObserver(mHandler);
+            getContentResolver().registerContentObserver(
+                    CMSettings.System.getUriFor(CMSettings.System.SYSTEM_PROFILES_ENABLED),
+                    false, mObserver);
+            mHandler.sendEmptyMessage(MSG_ON_AGENT_CREATED);
+        }
     }
 
     @Override
     public void onDestroy() {
-        mHandler = null;
-        mProfileManager = null;
-        setManagingTrust(false);
-        unregisterReceiver(mReceiver);
+        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
+            mHandler = null;
+            mProfileManager = null;
+            setManagingTrust(false);
+            unregisterReceiver(mReceiver);
+            getContentResolver().unregisterContentObserver(mObserver);
+        }
         super.onDestroy();
     }
 
     @Override
     public void onTrustTimeout() {
-        mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
+        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
+            mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
+        }
     }
 
     private void handleApplyCurrentProfileState() {
@@ -109,6 +145,126 @@ public class ProfilesTrustAgent extends TrustAgentService {
         }
     }
 
+    private boolean shouldGrantTrustOnTriggerStateChanged(String triggerId, int triggerType,
+            int triggerState) {
+        final Profile activeProfile = mProfileManager.getActiveProfile();
+        if (activeProfile != null) {
+            final int lockMode = activeProfile.getScreenLockMode().getValue();
+            if (lockMode == Profile.LockMode.INSECURE) {
+
+                final List<Profile.ProfileTrigger> wifiTriggers
+                        = activeProfile.getTriggersFromType(Profile.TriggerType.WIFI);
+                final List<Profile.ProfileTrigger> btTriggers
+                        = activeProfile.getTriggersFromType(Profile.TriggerType.BLUETOOTH);
+                Set<String> onWiFiConnect = new ArraySet<>();
+                Set<String> onBTConnect = new ArraySet<>();
+
+                for (Profile.ProfileTrigger trigger : wifiTriggers) {
+                    if (trigger.getState() == Profile.TriggerState.ON_CONNECT) {
+                        onWiFiConnect.add(trigger.getId());
+                    }
+                }
+                for (Profile.ProfileTrigger trigger : btTriggers) {
+                    if (trigger.getState() == Profile.TriggerState.ON_CONNECT) {
+                        onBTConnect.add(trigger.getId());
+                    }
+                }
+
+                if (triggerState == Profile.TriggerState.ON_DISCONNECT) {
+                    if (triggerType == Profile.TriggerType.BLUETOOTH
+                            && onWiFiConnect.contains(getActiveSSID())) return true;
+
+                    BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                    Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+                    Set<String> connectedBTDevices = new ArraySet<>();
+                    for (BluetoothDevice device : pairedDevices) {
+                        if (device.isConnected()) connectedBTDevices.add(device.getAddress());
+                    }
+                    for (Profile.ProfileTrigger btTrigger : btTriggers) {
+                        if (connectedBTDevices.contains(btTrigger.getId())
+                                && btTrigger.getState() == Profile.TriggerState.ON_CONNECT) {
+                            return true;
+                        }
+                    }
+                } else if (triggerState == Profile.TriggerState.ON_CONNECT
+                        && (onWiFiConnect.contains(triggerId) || onBTConnect.contains(triggerId))) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private boolean shouldGrantTrustOnCreate() {
+        final Profile activeProfile = mProfileManager.getActiveProfile();
+        if (activeProfile != null) {
+            final int lockMode = activeProfile.getScreenLockMode().getValue();
+            if (lockMode == Profile.LockMode.INSECURE) {
+                final String ssid = getActiveSSID();
+                for (Profile.ProfileTrigger trigger
+                        : activeProfile.getTriggersFromType(Profile.TriggerType.WIFI)) {
+                    if (trigger.getId().equals(ssid)
+                            && trigger.getState() == Profile.TriggerState.ON_CONNECT) {
+                        return true;
+                    }
+                }
+                BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+                Set<String> connectedBTDevices = new ArraySet<>();
+                for (BluetoothDevice device : pairedDevices) {
+                    if (device.isConnected()) connectedBTDevices.add(device.getAddress());
+                }
+                for (Profile.ProfileTrigger trigger
+                        : activeProfile.getTriggersFromType(Profile.TriggerType.BLUETOOTH)) {
+                    if (connectedBTDevices.contains(trigger.getId())
+                            && trigger.getState() == Profile.TriggerState.ON_CONNECT) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    private String getActiveSSID() {
+        final WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        WifiInfo wifiinfo = wifiManager.getConnectionInfo();
+        if (wifiinfo == null) {
+            return null;
+        }
+        WifiSsid ssid = wifiinfo.getWifiSsid();
+        if (ssid == null) {
+            return null;
+        }
+        return ssid.toString();
+    }
+
+    private void onTrustAgentCreated() {
+        // Check if we connected to a tracking WiFi network/BT device before this agent was created.
+        // The agent is created AFTER the user authenticates at boot or when a new lock screen
+        // (PIN, pattern, etc) is set
+        final Profile p = mProfileManager.getActiveProfile();
+        if (p != null && shouldGrantTrustOnCreate()) {
+            if (DEBUG) Log.w(TAG, "granting trust for profile " + p.getName());
+            grantTrust(getString(R.string.trust_by_profile), GRANT_DURATION_MS, false);
+        } else {
+            if (DEBUG) Log.w(TAG, "revoking trust.");
+            revokeTrust();
+        }
+    }
+
+    private void onTriggerStateChanged(String triggerId, int triggerType, int triggerState) {
+        final Profile p = mProfileManager.getActiveProfile();
+        if (p != null
+                && shouldGrantTrustOnTriggerStateChanged(triggerId, triggerType, triggerState)) {
+            if (DEBUG) Log.w(TAG, "granting trust for profile " + p.getName());
+            grantTrust(getString(R.string.trust_by_profile), GRANT_DURATION_MS, false);
+        } else {
+            if (DEBUG) Log.w(TAG, "revoking trust.");
+            revokeTrust();
+        }
+    }
+
     private static class ProfileHandler extends Handler {
         private final WeakReference<ProfilesTrustAgent> mService;
 
@@ -119,12 +275,47 @@ public class ProfilesTrustAgent extends TrustAgentService {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-                case MSG_UPDATE_STATE:
+                case MSG_UPDATE_STATE: {
                     ProfilesTrustAgent service = mService.get();
                     if (service != null) {
                         service.handleApplyCurrentProfileState();
                     }
                     break;
+                }
+                case MSG_ON_USER_SWITCH:
+                case MSG_ON_AGENT_CREATED: {
+                    ProfilesTrustAgent service = mService.get();
+                    if (service != null) {
+                        service.onTrustAgentCreated();
+                    }
+                    break;
+                }
+                case MSG_ON_TRIGGER_STATE_CHANGED: {
+                    ProfilesTrustAgent service = mService.get();
+                    if (service != null && msg.obj != null) {
+                        Bundle bundle = (Bundle) msg.obj;
+                        final String id = bundle.getString(ProfileManager.EXTRA_TRIGGER_ID);
+                        final int type = bundle.getInt(ProfileManager.EXTRA_TRIGGER_TYPE);
+                        final int state = bundle.getInt(ProfileManager.EXTRA_TRIGGER_STATE);
+                        service.onTriggerStateChanged(id, type, state);
+                    }
+                    break;
+                }
+            }
+        }
+    }
+
+    private class SystemProfilesSettingsObserver extends ContentObserver {
+
+        public SystemProfilesSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (CMSettings.System.getUriFor(CMSettings.System.SYSTEM_PROFILES_ENABLED)
+                    .compareTo(uri) == 0) {
+                mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
             }
         }
     }
