@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_031c3d76",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-06T21:45:59Z",
+      "side": 1,
+      "message": "Yep, forgot to revert this. Will fit it",
+      "parentUuid": "5faad753_03167da9",
+      "range": {
+        "startLine": 53,
+        "startChar": 41,
+        "endLine": 53,
+        "endChar": 45
+      },
+      "revId": "04f479576226a6056e3036d5ce8278d2ee6455b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_236a99ed",
         "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-06-06T21:03:34Z",
       "side": 1,
       "message": "ArraySet? :)",
+      "range": {
+        "startLine": 148,
+        "startChar": 48,
+        "endLine": 148,
+        "endChar": 55
+      },
+      "revId": "04f479576226a6056e3036d5ce8278d2ee6455b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_232139b1",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-06T21:45:59Z",
+      "side": 1,
+      "message": "Yep, will change it",
+      "parentUuid": "5faad753_236a99ed",
       "range": {
         "startLine": 148,
         "startChar": 48,
@@ -107,6 +155,30 @@
       "side": 1,
       "message": "I believe it is, but you need a similar construct to handle the scenario where the secondary cannot have access to the profile trust agent? since profiles isn\u0027t available for secondary users.",
       "parentUuid": "5faad753_03651d1e",
+      "range": {
+        "startLine": 295,
+        "startChar": 57,
+        "endLine": 295,
+        "endChar": 72
+      },
+      "revId": "04f479576226a6056e3036d5ce8278d2ee6455b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_830fcd35",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-06T21:45:59Z",
+      "side": 1,
+      "message": "Just found out this class was copied to com.android.server.pm in commit b7996b16a1. Still trying to figure out if I need this, though. It seems the profile trust agent is being destroyed (and recreated) during user switch.",
+      "parentUuid": "5faad753_23537941",
       "range": {
         "startLine": 295,
         "startChar": 57,
