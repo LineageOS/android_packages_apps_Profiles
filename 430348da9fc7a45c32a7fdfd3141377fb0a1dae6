@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_6cf15d95",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-07T19:13:02Z",
+      "side": 1,
+      "message": "o_0   I knew I was missing something. Fixed",
+      "parentUuid": "5faad753_ecaf8d7a",
+      "range": {
+        "startLine": 54,
+        "startChar": 41,
+        "endLine": 54,
+        "endChar": 45
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_0cea29ab",
         "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-06-07T19:07:39Z",
       "side": 1,
       "message": "any chance of this returning null?",
+      "range": {
+        "startLine": 152,
+        "startChar": 47,
+        "endLine": 152,
+        "endChar": 66
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8cee19b2",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-07T19:13:02Z",
+      "side": 1,
+      "message": "Nope. It always return a valid LockSettings object.",
+      "parentUuid": "5faad753_0cea29ab",
       "range": {
         "startLine": 152,
         "startChar": 47,
@@ -65,6 +113,24 @@
     },
     {
       "key": {
+        "uuid": "5faad753_4c326161",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-07T19:13:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_cccad14c",
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_ece46de2",
         "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
         "patchSetId": 2
@@ -88,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_2c2da5fd",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-07T19:13:02Z",
+      "side": 1,
+      "message": "Fixed",
+      "parentUuid": "5faad753_ece46de2",
+      "range": {
+        "startLine": 174,
+        "startChar": 0,
+        "endLine": 175,
+        "endChar": 84
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_acd2f5fe",
         "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
         "patchSetId": 2
@@ -99,6 +189,30 @@
       "writtenOn": "2016-06-07T19:07:39Z",
       "side": 1,
       "message": "same concern as mentioned above",
+      "range": {
+        "startLine": 201,
+        "startChar": 47,
+        "endLine": 201,
+        "endChar": 66
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ec322d5e",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-07T19:13:02Z",
+      "side": 1,
+      "message": "Pls check comment above",
+      "parentUuid": "5faad753_acd2f5fe",
       "range": {
         "startLine": 201,
         "startChar": 47,
