@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_ecaf8d7a",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2016-06-07T19:07:39Z",
+      "side": 1,
+      "message": "don\u0027t forget to switch this back to Log.isLoggable(TAG, Log.DEBUG)",
+      "range": {
+        "startLine": 54,
+        "startChar": 41,
+        "endLine": 54,
+        "endChar": 45
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_0cea29ab",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2016-06-07T19:07:39Z",
+      "side": 1,
+      "message": "any chance of this returning null?",
+      "range": {
+        "startLine": 152,
+        "startChar": 47,
+        "endLine": 152,
+        "endChar": 66
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_cccad14c",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2016-06-07T19:07:39Z",
+      "side": 1,
+      "message": "nit: no need for a newline here",
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ece46de2",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2016-06-07T19:07:39Z",
+      "side": 1,
+      "message": "multi-line if statement should use brackets",
+      "range": {
+        "startLine": 174,
+        "startChar": 0,
+        "endLine": 175,
+        "endChar": 84
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_acd2f5fe",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2016-06-07T19:07:39Z",
+      "side": 1,
+      "message": "same concern as mentioned above",
+      "range": {
+        "startLine": 201,
+        "startChar": 47,
+        "endLine": 201,
+        "endChar": 66
+      },
+      "revId": "430348da9fc7a45c32a7fdfd3141377fb0a1dae6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
