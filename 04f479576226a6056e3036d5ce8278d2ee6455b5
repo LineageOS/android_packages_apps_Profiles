@@ -188,6 +188,30 @@
       "revId": "04f479576226a6056e3036d5ce8278d2ee6455b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_0cb549cd",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 14421
+      },
+      "writtenOn": "2016-06-07T18:59:16Z",
+      "side": 1,
+      "message": "Kept this observer as is and added a filter to the broadcast receiver to check for ACTION_USER_FOREGROUND. This agent IS created for secondary users, but ProfileManager will return an empty profile (because profiles are no supported for secondary users) so we\u0027ll always default to revokeTrust",
+      "parentUuid": "5faad753_830fcd35",
+      "range": {
+        "startLine": 295,
+        "startChar": 57,
+        "endLine": 295,
+        "endChar": 72
+      },
+      "revId": "04f479576226a6056e3036d5ce8278d2ee6455b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
