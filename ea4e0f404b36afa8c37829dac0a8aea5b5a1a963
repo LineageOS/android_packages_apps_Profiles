@@ -1,0 +1,95 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_4c657c1d",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 7679
+      },
+      "writtenOn": "2016-06-09T13:41:08Z",
+      "side": 1,
+      "message": "error: INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED cannot be resolved or is not a field",
+      "revId": "ea4e0f404b36afa8c37829dac0a8aea5b5a1a963",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_aca67052",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 7679
+      },
+      "writtenOn": "2016-06-09T13:41:08Z",
+      "side": 1,
+      "message": "build Error: INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED cannot be resolved or is not a field",
+      "revId": "ea4e0f404b36afa8c37829dac0a8aea5b5a1a963",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8ca93425",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 7679
+      },
+      "writtenOn": "2016-06-09T13:41:08Z",
+      "side": 1,
+      "message": "ERROR: EXTRA_TRIGGER_ID cannot be resolved or is not a field",
+      "revId": "ea4e0f404b36afa8c37829dac0a8aea5b5a1a963",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ecb0e88c",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 7679
+      },
+      "writtenOn": "2016-06-09T13:41:08Z",
+      "side": 1,
+      "message": "ERROR: EXTRA_TRIGGER_TYPE cannot be resolved or is not a field",
+      "revId": "ea4e0f404b36afa8c37829dac0a8aea5b5a1a963",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ccb3ac97",
+        "filename": "src/org/cyanogenmod/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 7679
+      },
+      "writtenOn": "2016-06-09T13:41:08Z",
+      "side": 1,
+      "message": "ERROR: EXTRA_TRIGGER_STATE cannot be resolved or is not a field",
+      "range": {
+        "startLine": 300,
+        "startChar": 71,
+        "endLine": 300,
+        "endChar": 90
+      },
+      "revId": "ea4e0f404b36afa8c37829dac0a8aea5b5a1a963",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
