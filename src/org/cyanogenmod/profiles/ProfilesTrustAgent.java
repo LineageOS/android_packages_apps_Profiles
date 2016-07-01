@@ -129,6 +129,17 @@ public class ProfilesTrustAgent extends TrustAgentService {
             return;
         }*/
 
+        try {
+            if (CMSettings.System.getInt(getContentResolver(),
+                    CMSettings.System.SYSTEM_PROFILES_ENABLED) == 0) {
+                if (DEBUG) Log.d(TAG, "Profiles are disabled, revoking trust");
+                revokeTrust();
+                return;
+            }
+        } catch (CMSettings.CMSettingNotFoundException e) {
+            Log.e(TAG, "Failed to read CMSettings");
+        }
+
         Profile p = mProfileManager.getActiveProfile();
         int lockscreenState = p != null ? p.getScreenLockMode().getValue()
                 : Profile.LockMode.DEFAULT;
