@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Provider attendibilità profili</string>
-  <string name="profile_trust_agent_title">Agent attendibilità profili</string>
-  <string name="profile_trust_agent_summary">Consenti a Profili di disattivare temporaneamente la protezione del blocco schermo</string>
-  <string name="trust_by_profile">Attendibile da Profilo</string>
+  <string name="app_label">Dôveryhodný poskytovateľ profilov</string>
+  <string name="profile_trust_agent_title">Dôveryhodný agent profilov</string>
+  <string name="profile_trust_agent_summary">Umožní profilom dočasne vypnúť zamknutie obrazovky</string>
+  <string name="trust_by_profile">Akceptuje profil jako dôveryhodný</string>
 </resources>
