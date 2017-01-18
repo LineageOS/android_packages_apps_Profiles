@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2007 The Android Open Source Project
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,6 +54,10 @@ public final class ProfilePickerActivity extends AlertActivity implements
 
     private static final String SAVE_CLICKED_POS = "clicked_pos";
 
+    private static final String ACTION_LOCALE_PREFIX = "com.twofortyfouram.locale.intent.action.";
+    static final String EXTRA_LOCALE_BUNDLE = "com.twofortyfouram.locale.intent.extra.BUNDLE";
+    static final String EXTRA_LOCALE_STRING_BLURB = "com.twofortyfouram.locale.intent.extra.BLURB";
+
     private ProfileManager mProfileManager;
 
     /** The position in the list of the 'None' item. */
@@ -104,8 +109,14 @@ public final class ProfilePickerActivity extends AlertActivity implements
             mClickedPos = savedInstanceState.getInt(SAVE_CLICKED_POS, -1);
         }
 
+        boolean hasNoneDefault = true;
+        if (intent.getAction().startsWith(ACTION_LOCALE_PREFIX)) {
+            // when showing the Profile Picker in Locale, we don't need the None item
+            hasNoneDefault = false;
+        }
+
         // Get whether to show the 'None' item
-        mHasNoneItem = intent.getBooleanExtra(ProfileManager.EXTRA_PROFILE_SHOW_NONE, true);
+        mHasNoneItem = intent.getBooleanExtra(ProfileManager.EXTRA_PROFILE_SHOW_NONE, hasNoneDefault);
 
         // Give the Activity so it can do managed queries
         mProfileManager = ProfileManager.getInstance(this);
@@ -113,6 +124,13 @@ public final class ProfilePickerActivity extends AlertActivity implements
 
         // Get the UUID whose list item should have a checkmark
         String uuid = intent.getStringExtra(ProfileManager.EXTRA_PROFILE_EXISTING_UUID);
+        if (uuid == null) {
+            // Get UUID if this was launched with a Locale bundle
+            Bundle dataBundle = getIntent().getBundleExtra(EXTRA_LOCALE_BUNDLE);
+            if (dataBundle != null) {
+                uuid = dataBundle.getString(ProfileManager.EXTRA_PROFILE_PICKED_UUID);
+            }
+        }
         if (uuid == null) {
             mExistingUUID = null;
         } else {
@@ -216,15 +234,25 @@ public final class ProfilePickerActivity extends AlertActivity implements
         if (positiveResult) {
             Intent resultIntent = new Intent();
             UUID uuid = ProfileManager.NO_PROFILE;
+            String name = getText(R.string.profile_none).toString();
 
             if (mClickedPos != mNonePos) {
                 int pos = mHasNoneItem ? mClickedPos - 1 : mClickedPos;
                 if (pos >= 0 && pos < mProfiles.size()) {
-                    uuid = mProfiles.get(pos).getUuid();
+                    Profile p = mProfiles.get(pos);
+                    name = p.getName();
+                    uuid = p.getUuid();
                 }
             }
 
             resultIntent.putExtra(ProfileManager.EXTRA_PROFILE_PICKED_UUID, uuid.toString());
+
+            // Locale API needs UUID in extra bundle
+            Bundle dataBundle = new Bundle();
+            dataBundle.putString(ProfileManager.EXTRA_PROFILE_PICKED_UUID, uuid.toString());
+            resultIntent.putExtra(EXTRA_LOCALE_BUNDLE, dataBundle);
+            resultIntent.putExtra(EXTRA_LOCALE_STRING_BLURB, name);
+
             setResult(RESULT_OK, resultIntent);
         } else {
             setResult(RESULT_CANCELED);
