@@ -53,8 +53,30 @@
             <intent-filter>
                 <action android:name="cyanogenmod.platform.intent.action.PROFILE_PICKER" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_CONDITION" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".ProfileSelectedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROFILE_SELECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".ProfileLocaleFireReceiver"
+            android:permission="android.permission.WRITE_SETTINGS">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".ProfileLocaleQueryReceiver">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.QUERY_CONDITION" />
+            </intent-filter>
+        </receiver>
 
     </application>
 </manifest>
