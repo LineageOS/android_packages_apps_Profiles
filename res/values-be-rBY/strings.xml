@@ -20,6 +20,6 @@
   <string name="profile_picker_title">Профілі</string>
   <string name="profile_none">Няма</string>
   <string name="profile_trust_agent_title">Агент правераных профіляў</string>
-  <string name="profile_trust_agent_summary">Дазваляе профілям адключаць жкран блакавання</string>
+  <string name="profile_trust_agent_summary">Дазваляе профілям адключаць экран блакавання</string>
   <string name="trust_by_profile">Даверлівы профіль</string>
 </resources>
