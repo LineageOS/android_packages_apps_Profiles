@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package org.cyanogenmod.profiles;
+package org.lineageos.profiles;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -34,9 +34,9 @@ import android.os.UserHandle;
 import android.service.trust.TrustAgentService;
 import android.util.ArraySet;
 import android.util.Log;
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
-import cyanogenmod.providers.CMSettings;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
+import lineageos.providers.LineageSettings;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -96,7 +96,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
             setManagingTrust(true);
             mObserver = new SystemProfilesSettingsObserver(mHandler);
             getContentResolver().registerContentObserver(
-                    CMSettings.System.getUriFor(CMSettings.System.SYSTEM_PROFILES_ENABLED),
+                    LineageSettings.System.getUriFor(LineageSettings.System.SYSTEM_PROFILES_ENABLED),
                     false, mObserver);
             mHandler.sendEmptyMessage(MSG_ON_AGENT_CREATED);
         }
@@ -314,7 +314,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
-            if (CMSettings.System.getUriFor(CMSettings.System.SYSTEM_PROFILES_ENABLED)
+            if (LineageSettings.System.getUriFor(LineageSettings.System.SYSTEM_PROFILES_ENABLED)
                     .compareTo(uri) == 0) {
                 mHandler.sendEmptyMessage(MSG_UPDATE_STATE);
             }
