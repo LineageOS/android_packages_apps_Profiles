@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.profiles;
+package org.lineageos.profiles;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -28,8 +28,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
 
 import com.android.internal.app.AlertActivity;
 import com.android.internal.app.AlertController;

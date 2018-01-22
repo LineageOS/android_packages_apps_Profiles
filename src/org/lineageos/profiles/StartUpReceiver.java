@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package org.cyanogenmod.profiles;
+package org.lineageos.profiles;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
