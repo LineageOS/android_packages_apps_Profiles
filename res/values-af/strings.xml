@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profiel Vertroue Verskaffer</string>
-  <string name="profile_picker_title">Profiele</string>
-  <string name="profile_none">Geen</string>
-  <string name="profile_trust_agent_title">Profiele Vertroue Agent</string>
-  <string name="profile_trust_agent_summary">Laat Profiele tydelik slot skerm beskerming afskakel</string>
-  <string name="trust_by_profile">Vertrou deur profiel</string>
+    <string name="app_label">Profiel Vertroue Verskaffer</string>
+    <string name="profile_picker_title">Profiele</string>
+    <string name="profile_none">Geen</string>
+    <string name="profile_trust_agent_title">Profiele Vertroue Agent</string>
+    <string name="profile_trust_agent_summary">Laat Profiele tydelik slot skerm beskerming afskakel</string>
+    <string name="trust_by_profile">Vertrou deur profiel</string>
 </resources>

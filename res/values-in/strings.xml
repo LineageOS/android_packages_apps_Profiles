@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profil Penyedia Tepercaya</string>
-  <string name="profile_picker_title">Profil</string>
-  <string name="profile_none">Tidak ada</string>
-  <string name="profile_trust_agent_title">Profil Agen Tepercaya</string>
-  <string name="profile_trust_agent_summary">Izinkan Profile untuk menonaktifkan sementara proteksi kunci layar</string>
-  <string name="trust_by_profile">Dipercayai oleh Profil</string>
+    <string name="app_label">Profil Penyedia Tepercaya</string>
+    <string name="profile_picker_title">Profil</string>
+    <string name="profile_none">Tidak ada</string>
+    <string name="profile_trust_agent_title">Profil Agen Tepercaya</string>
+    <string name="profile_trust_agent_summary">Izinkan Profile untuk menonaktifkan sementara proteksi kunci layar</string>
+    <string name="trust_by_profile">Dipercayai oleh Profil</string>
 </resources>

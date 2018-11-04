@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">प्रोफाइल्स विश्वास प्रदाता</string>
-  <string name="profile_picker_title">प्रोफाइल्स</string>
-  <string name="profile_none">काहीच नाही</string>
-  <string name="profile_trust_agent_title">प्रोफाइल्स विश्वास एजंट</string>
-  <string name="profile_trust_agent_summary">प्रोफाइल्सना तात्पुरते लॉक स्क्रीन संरक्षण अक्षम करू देते</string>
-  <string name="trust_by_profile">प्रोफाइल्सद्वारे विश्वसनीय</string>
+    <string name="app_label">प्रोफाइल्स विश्वास प्रदाता</string>
+    <string name="profile_picker_title">प्रोफाइल्स</string>
+    <string name="profile_none">काहीच नाही</string>
+    <string name="profile_trust_agent_title">प्रोफाइल्स विश्वास एजंट</string>
+    <string name="profile_trust_agent_summary">प्रोफाइल्सना तात्पुरते लॉक स्क्रीन संरक्षण अक्षम करू देते</string>
+    <string name="trust_by_profile">प्रोफाइल्सद्वारे विश्वसनीय</string>
 </resources>

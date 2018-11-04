@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Provider attendibilità profili</string>
-  <string name="profile_picker_title">Profili</string>
-  <string name="profile_none">Nessuno</string>
-  <string name="profile_trust_agent_title">Agent attendibilità profili</string>
-  <string name="profile_trust_agent_summary">Consenti a Profili di disattivare temporaneamente la protezione del blocco schermo</string>
-  <string name="trust_by_profile">Attendibile da Profilo</string>
+    <string name="app_label">Provider attendibilità profili</string>
+    <string name="profile_picker_title">Profili</string>
+    <string name="profile_none">Nessuno</string>
+    <string name="profile_trust_agent_title">Agent attendibilità profili</string>
+    <string name="profile_trust_agent_summary">Consenti a Profili di disattivare temporaneamente la protezione del blocco schermo</string>
+    <string name="trust_by_profile">Attendibile da Profilo</string>
 </resources>

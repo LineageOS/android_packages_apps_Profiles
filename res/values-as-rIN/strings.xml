@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">প্ৰ\'ফাইল ট্ৰাষ্ট প্ৰদানকাৰী</string>
-  <string name="profile_picker_title">প্ৰ\'ফাইল্চ</string>
-  <string name="profile_none">হাল্লা</string>
-  <string name="profile_trust_agent_title">প্ৰ\'ফাইল ট্ৰাষ্ট এজেণ্ট</string>
-  <string name="profile_trust_agent_summary">প্ৰ\'ফাইলক অস্থায়ীভাবে লক স্ক্ৰীণ সুৰক্ষা অক্ষম কৰিবলৈ অনুমতি দিয়ে</string>
-  <string name="trust_by_profile">প্ৰ\'ফাইলৰ দ্বাৰা বিশ্বাসী</string>
+    <string name="app_label">প্ৰ\'ফাইল ট্ৰাষ্ট প্ৰদানকাৰী</string>
+    <string name="profile_picker_title">প্ৰ\'ফাইল্চ</string>
+    <string name="profile_none">হাল্লা</string>
+    <string name="profile_trust_agent_title">প্ৰ\'ফাইল ট্ৰাষ্ট এজেণ্ট</string>
+    <string name="profile_trust_agent_summary">প্ৰ\'ফাইলক অস্থায়ীভাবে লক স্ক্ৰীণ সুৰক্ষা অক্ষম কৰিবলৈ অনুমতি দিয়ে</string>
+    <string name="trust_by_profile">প্ৰ\'ফাইলৰ দ্বাৰা বিশ্বাসী</string>
 </resources>

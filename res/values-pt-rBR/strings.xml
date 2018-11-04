@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Provedor de perfis de confiança</string>
-  <string name="profile_picker_title">Perfis</string>
-  <string name="profile_none">Nenhum</string>
-  <string name="profile_trust_agent_title">Agente de perfis de confiança</string>
-  <string name="profile_trust_agent_summary">Permite que os Perfis desativem temporariamente a proteção da tela de bloqueio</string>
-  <string name="trust_by_profile">Confiável por perfil</string>
+    <string name="app_label">Provedor de perfis de confiança</string>
+    <string name="profile_picker_title">Perfis</string>
+    <string name="profile_none">Nenhum</string>
+    <string name="profile_trust_agent_title">Agente de perfis de confiança</string>
+    <string name="profile_trust_agent_summary">Permite que os Perfis desativem temporariamente a proteção da tela de bloqueio</string>
+    <string name="trust_by_profile">Confiável por perfil</string>
 </resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">系統設定檔信任供應商</string>
-  <string name="profile_picker_title">設定檔</string>
-  <string name="profile_none">無</string>
-  <string name="profile_trust_agent_title">系統設定檔信任代理</string>
-  <string name="profile_trust_agent_summary">允許系統設定檔暫時停用鎖定畫面功能</string>
-  <string name="trust_by_profile">被系統設定檔信任</string>
+    <string name="app_label">系統設定檔信任供應商</string>
+    <string name="profile_picker_title">設定檔</string>
+    <string name="profile_none">無</string>
+    <string name="profile_trust_agent_title">系統設定檔信任代理</string>
+    <string name="profile_trust_agent_summary">允許系統設定檔暫時停用鎖定畫面功能</string>
+    <string name="trust_by_profile">被系統設定檔信任</string>
 </resources>

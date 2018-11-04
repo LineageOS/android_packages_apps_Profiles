@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profiilin luottama tarjoaja</string>
-  <string name="profile_picker_title">Profiilit</string>
-  <string name="profile_none">Ei mitään</string>
-  <string name="profile_trust_agent_title">Profiilin luottama taho</string>
-  <string name="profile_trust_agent_summary">Sallii profiilien ottaa lukitusnäytön suojauksen väliaikaisesti pois käytöstä</string>
-  <string name="trust_by_profile">Profiilin luottama</string>
+    <string name="app_label">Profiilin luottama tarjoaja</string>
+    <string name="profile_picker_title">Profiilit</string>
+    <string name="profile_none">Ei mitään</string>
+    <string name="profile_trust_agent_title">Profiilin luottama taho</string>
+    <string name="profile_trust_agent_summary">Sallii profiilien ottaa lukitusnäytön suojauksen väliaikaisesti pois käytöstä</string>
+    <string name="trust_by_profile">Profiilin luottama</string>
 </resources>

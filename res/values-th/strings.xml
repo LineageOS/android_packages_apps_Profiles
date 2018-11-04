@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">ผู้ให้บริการความน่าเชื่อถือของโปรไฟล์</string>
-  <string name="profile_picker_title">โปรไฟล์</string>
-  <string name="profile_none">ไม่มี</string>
-  <string name="profile_trust_agent_title">ผู้แทนความน่าเชื่อถือของโปรไฟล์</string>
-  <string name="profile_trust_agent_summary">อนุญาตให้โปรไฟล์ปิดใช้งานชั่วคราวการปกป้องหน้าจอล็อค</string>
-  <string name="trust_by_profile">ได้รับความเชื่อถือจากโปรไฟล์</string>
+    <string name="app_label">ผู้ให้บริการความน่าเชื่อถือของโปรไฟล์</string>
+    <string name="profile_picker_title">โปรไฟล์</string>
+    <string name="profile_none">ไม่มี</string>
+    <string name="profile_trust_agent_title">ผู้แทนความน่าเชื่อถือของโปรไฟล์</string>
+    <string name="profile_trust_agent_summary">อนุญาตให้โปรไฟล์ปิดใช้งานชั่วคราวการปกป้องหน้าจอล็อค</string>
+    <string name="trust_by_profile">ได้รับความเชื่อถือจากโปรไฟล์</string>
 </resources>

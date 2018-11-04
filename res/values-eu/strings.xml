@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profilen Konfiantza Hornitzailea</string>
-  <string name="profile_picker_title">Profilak</string>
-  <string name="profile_none">Bat ere ez</string>
-  <string name="profile_trust_agent_title">Profilen Konfiantza Agentea</string>
-  <string name="profile_trust_agent_summary">Hasiera-pantailako babesa une batez desgaitzea ahalbidetzen dio profilei</string>
-  <string name="trust_by_profile">Profilaren konfiantzazkoa</string>
+    <string name="app_label">Profilen Konfiantza Hornitzailea</string>
+    <string name="profile_picker_title">Profilak</string>
+    <string name="profile_none">Bat ere ez</string>
+    <string name="profile_trust_agent_title">Profilen Konfiantza Agentea</string>
+    <string name="profile_trust_agent_summary">Hasiera-pantailako babesa une batez desgaitzea ahalbidetzen dio profilei</string>
+    <string name="trust_by_profile">Profilaren konfiantzazkoa</string>
 </resources>

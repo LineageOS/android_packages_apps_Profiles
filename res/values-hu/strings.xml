@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profilok Megbízható Szolgáltató</string>
-  <string name="profile_picker_title">Profilok</string>
-  <string name="profile_none">Nincs</string>
-  <string name="profile_trust_agent_title">Profilok Megbízható Ügynök</string>
-  <string name="profile_trust_agent_summary">Lehetővé teszi a Profilok számára, hogy átmenetileg kikapcsolja a zárképernyő védelmet</string>
-  <string name="trust_by_profile">Profil által megbízható</string>
+    <string name="app_label">Profilok Megbízható Szolgáltató</string>
+    <string name="profile_picker_title">Profilok</string>
+    <string name="profile_none">Nincs</string>
+    <string name="profile_trust_agent_title">Profilok Megbízható Ügynök</string>
+    <string name="profile_trust_agent_summary">Lehetővé teszi a Profilok számára, hogy átmenetileg kikapcsolja a zárképernyő védelmet</string>
+    <string name="trust_by_profile">Profil által megbízható</string>
 </resources>

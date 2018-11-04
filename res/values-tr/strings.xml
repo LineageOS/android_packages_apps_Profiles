@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profil Güven Sağlayıcısı</string>
-  <string name="profile_picker_title">Profiller</string>
-  <string name="profile_none">Yok</string>
-  <string name="profile_trust_agent_title">Profiller Güven Temsilcisi</string>
-  <string name="profile_trust_agent_summary">Profillerin kilit ekranı korumasını geçici olarak devre dışı bırakmasına izin verir</string>
-  <string name="trust_by_profile">Profil tarafından güvenilen</string>
+    <string name="app_label">Profil Güven Sağlayıcısı</string>
+    <string name="profile_picker_title">Profiller</string>
+    <string name="profile_none">Yok</string>
+    <string name="profile_trust_agent_title">Profiller Güven Temsilcisi</string>
+    <string name="profile_trust_agent_summary">Profillerin kilit ekranı korumasını geçici olarak devre dışı bırakmasına izin verir</string>
+    <string name="trust_by_profile">Profil tarafından güvenilen</string>
 </resources>
