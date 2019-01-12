@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Proveïdor de perfils de confiança</string>
-  <string name="profile_picker_title">Perfils</string>
-  <string name="profile_none">Cap</string>
-  <string name="profile_trust_agent_title">Agent de perfils de confiança</string>
-  <string name="profile_trust_agent_summary">Permet que els perfils desactivin temporalment la protecció de la pantalla de bloqueig</string>
-  <string name="trust_by_profile">Confiat mitjançant un Perfil</string>
+    <string name="app_label">Proveïdor de perfils de confiança</string>
+    <string name="profile_picker_title">Perfils</string>
+    <string name="profile_none">Cap</string>
+    <string name="profile_trust_agent_title">Agent de perfils de confiança</string>
+    <string name="profile_trust_agent_summary">Permet que els perfils desactivin temporalment la protecció de la pantalla de bloqueig</string>
+    <string name="trust_by_profile">Confiat mitjançant un Perfil</string>
 </resources>

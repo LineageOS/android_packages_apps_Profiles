@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profiles Trust Provider</string>
-  <string name="profile_picker_title">Profiles</string>
-  <string name="profile_none">None</string>
-  <string name="profile_trust_agent_title">Profiles Trust Agent</string>
-  <string name="profile_trust_agent_summary">Allows Profiles to temporarily disable lock screen protection</string>
-  <string name="trust_by_profile">Trusted by Profile</string>
+    <string name="app_label">Profiles Trust Provider</string>
+    <string name="profile_picker_title">Profiles</string>
+    <string name="profile_none">None</string>
+    <string name="profile_trust_agent_title">Profiles Trust Agent</string>
+    <string name="profile_trust_agent_summary">Allows Profiles to temporarily disable lock screen protection</string>
+    <string name="trust_by_profile">Trusted by Profile</string>
 </resources>

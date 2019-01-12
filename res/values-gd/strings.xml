@@ -15,4 +15,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources></resources>
+<resources>
+    <string name="app_label">Solaraiche earbsa nam pròifil</string>
+    <string name="profile_picker_title">Pròifilean</string>
+    <string name="profile_none">Chan eil gin</string>
+    <string name="profile_trust_agent_title">Àidseant earbsa nam pròifil</string>
+    <string name="profile_trust_agent_summary">Bheir seo comas do ghleus nam pròifil dìon na sgrìn-ghlasaidh a chur à comas rè seal</string>
+    <string name="trust_by_profile">Earbsach a-rèir gleus nam pròifil</string>
+</resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profiles Trust Provider</string>
-  <string name="profile_picker_title">Profilet</string>
-  <string name="profile_none">Asnjë</string>
-  <string name="profile_trust_agent_title">Profiles Trust Agent</string>
-  <string name="profile_trust_agent_summary">Lejon Profilet që të çaktivizojnë përkohësisht mbrojtjen e ekranit bllokues</string>
-  <string name="trust_by_profile">I besuar nga Profili</string>
+    <string name="app_label">Profiles Trust Provider</string>
+    <string name="profile_picker_title">Profilet</string>
+    <string name="profile_none">Asnjë</string>
+    <string name="profile_trust_agent_title">Profiles Trust Agent</string>
+    <string name="profile_trust_agent_summary">Lejon Profilet që të çaktivizojnë përkohësisht mbrojtjen e ekranit bllokues</string>
+    <string name="trust_by_profile">I besuar nga Profili</string>
 </resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profiler stole på leverandøren</string>
-  <string name="profile_picker_title">Profiler</string>
-  <string name="profile_none">Ingen</string>
-  <string name="profile_trust_agent_title">Profiler Trust Agent</string>
-  <string name="profile_trust_agent_summary">Lar profiler midlertidig slå av skjermbeskyttelse</string>
-  <string name="trust_by_profile">Klarert av profil</string>
+    <string name="app_label">Profiler stole på leverandøren</string>
+    <string name="profile_picker_title">Profiler</string>
+    <string name="profile_none">Ingen</string>
+    <string name="profile_trust_agent_title">Profiler Trust Agent</string>
+    <string name="profile_trust_agent_summary">Lar profiler midlertidig slå av skjermbeskyttelse</string>
+    <string name="trust_by_profile">Klarert av profil</string>
 </resources>

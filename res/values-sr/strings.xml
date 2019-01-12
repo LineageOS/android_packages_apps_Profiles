@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Профили провајдера од поверења</string>
-  <string name="profile_picker_title">Профили</string>
-  <string name="profile_none">Ништа</string>
-  <string name="profile_trust_agent_title">Профили агента од поверења</string>
-  <string name="profile_trust_agent_summary">Дозволи профилима да привремено онемогуће закључани екран</string>
-  <string name="trust_by_profile">Поуздани профил</string>
+    <string name="app_label">Профили провајдера од поверења</string>
+    <string name="profile_picker_title">Профили</string>
+    <string name="profile_none">Ништа</string>
+    <string name="profile_trust_agent_title">Профили агента од поверења</string>
+    <string name="profile_trust_agent_summary">Дозволи профилима да привремено онемогуће закључани екран</string>
+    <string name="trust_by_profile">Поуздани профил</string>
 </resources>

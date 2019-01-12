@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profils de fournisseur de confiance</string>
-  <string name="profile_picker_title">Profils</string>
-  <string name="profile_none">Aucun</string>
-  <string name="profile_trust_agent_title">Profils d\'agent de confiance</string>
-  <string name="profile_trust_agent_summary">Permet à Profiles de désactiver temporairement la protection de l\'écran de verrouillage</string>
-  <string name="trust_by_profile">Approuvé par Profil</string>
+    <string name="app_label">Profils de fournisseur de confiance</string>
+    <string name="profile_picker_title">Profils</string>
+    <string name="profile_none">Aucun</string>
+    <string name="profile_trust_agent_title">Profils d\'agent de confiance</string>
+    <string name="profile_trust_agent_summary">Permet à Profiles de désactiver temporairement la protection de l\'écran de verrouillage</string>
+    <string name="trust_by_profile">Approuvé par Profil</string>
 </resources>

@@ -16,6 +16,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="profile_picker_title">Profilos</string>
-  <string name="profile_none">Nudda</string>
+    <string name="profile_picker_title">Profilos</string>
+    <string name="profile_none">Nudda</string>
 </resources>

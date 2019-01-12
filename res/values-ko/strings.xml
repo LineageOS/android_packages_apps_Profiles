@@ -16,11 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">프로필 Trust Provider</string>
-  <string name="profile_picker_title">프로필
-</string>
-  <string name="profile_none">선택 안함</string>
-  <string name="profile_trust_agent_title">프로필 Trust Agent</string>
-  <string name="profile_trust_agent_summary">프로필이 일시적으로 잠금 화면 보호를 해제하도록 허용합니다.</string>
-  <string name="trust_by_profile">프로필에서 신뢰함</string>
+    <string name="app_label">프로필 Trust Provider</string>
+    <string name="profile_picker_title">프로필</string>
+    <string name="profile_none">선택 안함</string>
+    <string name="profile_trust_agent_title">프로필 Trust Agent</string>
+    <string name="profile_trust_agent_summary">프로필이 일시적으로 잠금 화면 보호를 해제하도록 허용합니다.</string>
+    <string name="trust_by_profile">프로필에서 신뢰함</string>
 </resources>
