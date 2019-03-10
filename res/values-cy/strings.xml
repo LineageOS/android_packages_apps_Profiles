@@ -16,7 +16,10 @@
      limitations under the License.
 -->
 <resources>
+    <string name="app_label">Darparwr Trust Proffiliau</string>
     <string name="profile_picker_title">Proffiliau</string>
     <string name="profile_none">Dim</string>
+    <string name="profile_trust_agent_title">Asiant Trust Proffiliau</string>
     <string name="profile_trust_agent_summary">Mae\'n caniatáu i Proffiliau analluogi diogelwch sgrin cloi dros dro.</string>
+    <string name="trust_by_profile">Ymddiriedir ynddo gan Broffil</string>
 </resources>
