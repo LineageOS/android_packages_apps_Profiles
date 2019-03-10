@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Betroet Leverandør Profiler</string>
-  <string name="profile_picker_title">Profiler</string>
-  <string name="profile_none">Ingen</string>
-  <string name="profile_trust_agent_title">Betroet Agent Profiler</string>
-  <string name="profile_trust_agent_summary">Tillader at Profiler midlertidigt deaktiverer skærmlåsbeskyttelse</string>
-  <string name="trust_by_profile">Betroet af Profil</string>
+    <string name="app_label">Betroet Leverandør Profiler</string>
+    <string name="profile_picker_title">Profiler</string>
+    <string name="profile_none">Ingen</string>
+    <string name="profile_trust_agent_title">Betroet Agent Profiler</string>
+    <string name="profile_trust_agent_summary">Tillader at Profiler midlertidigt deaktiverer skærmlåsbeskyttelse</string>
+    <string name="trust_by_profile">Betroet af Profil</string>
 </resources>

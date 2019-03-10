@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Постачальник довірених профілів</string>
-  <string name="profile_picker_title">Профілі</string>
-  <string name="profile_none">Жодних</string>
-  <string name="profile_trust_agent_title">Агент довірених профілів</string>
-  <string name="profile_trust_agent_summary">Дозволяє профілям тимчасово вимикати екран блокування</string>
-  <string name="trust_by_profile">Довірений профіль</string>
+    <string name="app_label">Постачальник довірених профілів</string>
+    <string name="profile_picker_title">Профілі</string>
+    <string name="profile_none">Жодних</string>
+    <string name="profile_trust_agent_title">Агент довірених профілів</string>
+    <string name="profile_trust_agent_summary">Дозволяє профілям тимчасово вимикати екран блокування</string>
+    <string name="trust_by_profile">Довірений профіль</string>
 </resources>

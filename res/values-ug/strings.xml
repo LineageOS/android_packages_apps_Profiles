@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">مۇھىت ھالىتى ئىناۋەت تەمىنلىگۈچى</string>
-  <string name="profile_picker_title">قىسقىچە چۈشەندۈرۈش</string>
-  <string name="profile_none">يوق</string>
-  <string name="profile_trust_agent_title">مۇھىت ھالىتى ئىناۋەت ۋاكالەتچىسى</string>
-  <string name="profile_trust_agent_summary">مۇھىت ھالىتىنىڭ ئېكراننى قۇلۇپلاپ قوغداشنى ۋاقىتلىق چەكلىشىگە يول قويۇش</string>
-  <string name="trust_by_profile">سىستېمىدا ئىناۋەتلىك قىلىش</string>
+    <string name="app_label">مۇھىت ھالىتى ئىناۋەت تەمىنلىگۈچى</string>
+    <string name="profile_picker_title">قىسقىچە چۈشەندۈرۈش</string>
+    <string name="profile_none">يوق</string>
+    <string name="profile_trust_agent_title">مۇھىت ھالىتى ئىناۋەت ۋاكالەتچىسى</string>
+    <string name="profile_trust_agent_summary">مۇھىت ھالىتىنىڭ ئېكراننى قۇلۇپلاپ قوغداشنى ۋاقىتلىق چەكلىشىگە يول قويۇش</string>
+    <string name="trust_by_profile">سىستېمىدا ئىناۋەتلىك قىلىش</string>
 </resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Anbieter für vertrauenswürdige Profile</string>
-  <string name="profile_picker_title">Profile</string>
-  <string name="profile_none">Keins</string>
-  <string name="profile_trust_agent_title">Agent für vertrauenswürdige Profile</string>
-  <string name="profile_trust_agent_summary">Erlaubt Profilen, die Bildschirmsperre vorübergehend zu deaktivieren.</string>
-  <string name="trust_by_profile">Vertrauenswürdiges Profil</string>
+    <string name="app_label">Anbieter für vertrauenswürdige Profile</string>
+    <string name="profile_picker_title">Profile</string>
+    <string name="profile_none">Keins</string>
+    <string name="profile_trust_agent_title">Agent für vertrauenswürdige Profile</string>
+    <string name="profile_trust_agent_summary">Erlaubt Profilen, die Bildschirmsperre vorübergehend zu deaktivieren.</string>
+    <string name="trust_by_profile">Vertrauenswürdiges Profil</string>
 </resources>

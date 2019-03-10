@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Доставчик на сигурни профили</string>
-  <string name="profile_picker_title">Профили</string>
-  <string name="profile_none">Няма</string>
-  <string name="profile_trust_agent_title">Посредник за сигурни профили</string>
-  <string name="profile_trust_agent_summary">Позволява на Профила временното изключване на защитения достъп</string>
-  <string name="trust_by_profile">Сигурност на профила</string>
+    <string name="app_label">Доставчик на сигурни профили</string>
+    <string name="profile_picker_title">Профили</string>
+    <string name="profile_none">Няма</string>
+    <string name="profile_trust_agent_title">Посредник за сигурни профили</string>
+    <string name="profile_trust_agent_summary">Позволява на Профила временното изключване на защитения достъп</string>
+    <string name="trust_by_profile">Сигурност на профила</string>
 </resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Cấu hình nhà cung cấp đáng tin cậy</string>
-  <string name="profile_picker_title">Cấu hình</string>
-  <string name="profile_none">Không có</string>
-  <string name="profile_trust_agent_title">Cấu hình đại lý đáng tin cậy</string>
-  <string name="profile_trust_agent_summary">Cho phép cấu hình để tạm thời vô hiệu hóa bảo vệ màn hình khóa</string>
-  <string name="trust_by_profile">Đáng tin cậy nhờ vào cấu hình</string>
+    <string name="app_label">Cấu hình nhà cung cấp đáng tin cậy</string>
+    <string name="profile_picker_title">Cấu hình</string>
+    <string name="profile_none">Không có</string>
+    <string name="profile_trust_agent_title">Cấu hình đại lý đáng tin cậy</string>
+    <string name="profile_trust_agent_summary">Cho phép cấu hình để tạm thời vô hiệu hóa bảo vệ màn hình khóa</string>
+    <string name="trust_by_profile">Đáng tin cậy nhờ vào cấu hình</string>
 </resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">ప్రోఫైల్స్ ట్రస్ట్ ప్రొవైడర్</string>
-  <string name="profile_picker_title">ప్రొఫైళ్ళు</string>
-  <string name="profile_none">ఏదీ లేదు</string>
-  <string name="profile_trust_agent_title">ప్రోఫైల్స్ ట్రస్ట్ ఏజెంట్</string>
-  <string name="profile_trust_agent_summary">లాక్ స్క్రీన్ రక్షణను తాత్కాలికంగా నిలిపివేయడానికి ప్రోఫైళ్ళకు అనుమతినిస్తుంది</string>
-  <string name="trust_by_profile">ప్రొఫైలుచే విశ్వసించబడినది</string>
+    <string name="app_label">ప్రోఫైల్స్ ట్రస్ట్ ప్రొవైడర్</string>
+    <string name="profile_picker_title">ప్రొఫైళ్ళు</string>
+    <string name="profile_none">ఏదీ లేదు</string>
+    <string name="profile_trust_agent_title">ప్రోఫైల్స్ ట్రస్ట్ ఏజెంట్</string>
+    <string name="profile_trust_agent_summary">లాక్ స్క్రీన్ రక్షణను తాత్కాలికంగా నిలిపివేయడానికి ప్రోఫైళ్ళకు అనుమతినిస్తుంది</string>
+    <string name="trust_by_profile">ప్రొఫైలుచే విశ్వసించబడినది</string>
 </resources>
