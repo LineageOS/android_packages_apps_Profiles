@@ -20,6 +20,6 @@
     <string name="profile_picker_title">ಪ್ರೊಫೈಲ್‌ಗಳು</string>
     <string name="profile_none">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="profile_trust_agent_title">ಪ್ರೊಫೈಲ್ಗಳ ಟ್ರಸ್ಟ್ ಏಜೆಂಟ್</string>
-    <string name="profile_trust_agent_summary">ಪ್ರೊಫೈಲ್‍ಗಳಿಗೆ ಲಾಕ್ ಪರದೆ ಸುರಕ್ಷೆಯನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ಅನುಮತಿಸುತ್ತದೆ</string>
+    <string name="profile_trust_agent_summary">ರೇಖಾಕೃತಿಗಳಿಗೆ ಬಿಗಿದ ಪರದೆ ಸುರಕ್ಷೆಯನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಅಶಕ್ತಗೊಳಿಸಲು ಅನುಮತಿಸುತ್ತದೆ</string>
     <string name="trust_by_profile">ವಿಶ್ವಾಸಾರ್ಹ ಪ್ರೊಫೈಲ್</string>
 </resources>
