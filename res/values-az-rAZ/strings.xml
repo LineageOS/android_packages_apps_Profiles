@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_label">Profiler Tillids-Leverandør</string>
-    <string name="profile_picker_title">Profiler</string>
-    <string name="profile_none">Ingen</string>
-    <string name="profile_trust_agent_title">Profiler Tillids-Agent</string>
-    <string name="profile_trust_agent_summary">Tillader Profiler midlertidigt at deaktivere låseskærm-beskyttelse</string>
-    <string name="trust_by_profile">Betroet af Profil</string>
+    <string name="app_label">Profil Güvən Təchizatçısı</string>
+    <string name="profile_picker_title">Profillər</string>
+    <string name="profile_none">Heç biri</string>
+    <string name="profile_trust_agent_title">Profil Güvən Agenti</string>
+    <string name="profile_trust_agent_summary">Profillərin, kilid ekranı qorumasını müvəqqəti olaraq sıradan çıxartmasına icazə verər</string>
+    <string name="trust_by_profile">Profil tərəfindən güvənilən</string>
 </resources>
