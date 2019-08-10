@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">પ્રોફાઇલ્સ ટ્રસ્ટ પ્રદાતા</string>
-  <string name="profile_picker_title">પ્રોફાઇલ્સ</string>
-  <string name="profile_none">કોઈ નહીં</string>
-  <string name="profile_trust_agent_title">પ્રોફાઇલ્સ ટ્રસ્ટ એજન્ટ</string>
-  <string name="profile_trust_agent_summary">પ્રોફાઇલ્સને હંગામી ધોરણે સ્ક્રીન સુરક્ષા અક્ષમ કરવાની છૂટ આપે છે</string>
-  <string name="trust_by_profile">પ્રોફાઇલ માટે વિશ્વસનીય</string>
+    <string name="app_label">પ્રોફાઇલ્સ ટ્રસ્ટ પ્રદાતા</string>
+    <string name="profile_picker_title">પ્રોફાઇલ્સ</string>
+    <string name="profile_none">કોઈ નહીં</string>
+    <string name="profile_trust_agent_title">પ્રોફાઇલ્સ ટ્રસ્ટ એજન્ટ</string>
+    <string name="profile_trust_agent_summary">પ્રોફાઇલ્સને હંગામી ધોરણે સ્ક્રીન સુરક્ષા અક્ષમ કરવાની છૂટ આપે છે</string>
+    <string name="trust_by_profile">પ્રોફાઇલ માટે વિશ્વસનીય</string>
 </resources>

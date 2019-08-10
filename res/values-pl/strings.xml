@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Dostawca Zaufanych Profili</string>
-  <string name="profile_picker_title">Profile</string>
-  <string name="profile_none">Brak</string>
-  <string name="profile_trust_agent_title">Agent Zaufanych Profili</string>
-  <string name="profile_trust_agent_summary">Pozwala Profilom na tymczasowe wyłączenie ochrony blokady ekranu</string>
-  <string name="trust_by_profile">Zaufane przez Profile</string>
+    <string name="app_label">Dostawca Zaufanych Profili</string>
+    <string name="profile_picker_title">Profile</string>
+    <string name="profile_none">Brak</string>
+    <string name="profile_trust_agent_title">Agent Zaufanych Profili</string>
+    <string name="profile_trust_agent_summary">Pozwala Profilom na tymczasowe wyłączenie ochrony blokady ekranu</string>
+    <string name="trust_by_profile">Zaufane przez Profile</string>
 </resources>

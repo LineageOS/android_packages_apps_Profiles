@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Důvěryhodný poskytovatel profilů</string>
-  <string name="profile_picker_title">Profily</string>
-  <string name="profile_none">Žádný</string>
-  <string name="profile_trust_agent_title">Důvěryhodný agent profilů</string>
-  <string name="profile_trust_agent_summary">Umožňuje profilům dočasně vypnout uzamčení obrazovky</string>
-  <string name="trust_by_profile">Akceptuje profil jako důvěryhodný</string>
+    <string name="app_label">Důvěryhodný poskytovatel profilů</string>
+    <string name="profile_picker_title">Profily</string>
+    <string name="profile_none">Žádný</string>
+    <string name="profile_trust_agent_title">Důvěryhodný agent profilů</string>
+    <string name="profile_trust_agent_summary">Umožňuje profilům dočasně vypnout uzamčení obrazovky</string>
+    <string name="trust_by_profile">Akceptuje profil jako důvěryhodný</string>
 </resources>

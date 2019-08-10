@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Betrodda leverantörsprofiler</string>
-  <string name="profile_picker_title">Profiler</string>
-  <string name="profile_none">Ingen</string>
-  <string name="profile_trust_agent_title">Betrodda agentprofiler</string>
-  <string name="profile_trust_agent_summary">Tillåt att profiler tillfälligt inaktiverar skärmlåset</string>
-  <string name="trust_by_profile">Betrodd av profil</string>
+    <string name="app_label">Betrodda leverantörsprofiler</string>
+    <string name="profile_picker_title">Profiler</string>
+    <string name="profile_none">Ingen</string>
+    <string name="profile_trust_agent_title">Betrodda agentprofiler</string>
+    <string name="profile_trust_agent_summary">Tillåt att profiler tillfälligt inaktiverar skärmlåset</string>
+    <string name="trust_by_profile">Betrodd av profil</string>
 </resources>

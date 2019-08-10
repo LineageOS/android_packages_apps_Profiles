@@ -16,8 +16,8 @@
      limitations under the License.
 -->
 <resources>
-  <string name="profile_picker_title">പ്രൊഫൈലുകൾ</string>
-  <string name="profile_none">ഒന്നുമില്ല</string>
-  <string name="profile_trust_agent_title">Profiles Trust Agent</string>
-  <string name="profile_trust_agent_summary">Allows Profiles to temporarily disable lock screen protection</string>
+    <string name="profile_picker_title">പ്രൊഫൈലുകൾ</string>
+    <string name="profile_none">ഒന്നുമില്ല</string>
+    <string name="profile_trust_agent_title">Profiles Trust Agent</string>
+    <string name="profile_trust_agent_summary">Allows Profiles to temporarily disable lock screen protection</string>
 </resources>

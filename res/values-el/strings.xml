@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Πάροχος Εμπιστοσύνης Προφίλ</string>
-  <string name="profile_picker_title">Προφίλ</string>
-  <string name="profile_none">Κανένα</string>
-  <string name="profile_trust_agent_title">Έμπιστος αντιπρόσωπος Προφίλ</string>
-  <string name="profile_trust_agent_summary">Επιτρέπει στα Προφίλ να απενεργοποιήσουν προσωρινά την οθόνη κλειδώματος</string>
-  <string name="trust_by_profile">Έμπιστο από το Προφίλ</string>
+    <string name="app_label">Πάροχος Εμπιστοσύνης Προφίλ</string>
+    <string name="profile_picker_title">Προφίλ</string>
+    <string name="profile_none">Κανένα</string>
+    <string name="profile_trust_agent_title">Έμπιστος αντιπρόσωπος Προφίλ</string>
+    <string name="profile_trust_agent_summary">Επιτρέπει στα Προφίλ να απενεργοποιήσουν προσωρινά την οθόνη κλειδώματος</string>
+    <string name="trust_by_profile">Έμπιστο από το Προφίλ</string>
 </resources>

@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profielen Trust-provider</string>
-  <string name="profile_picker_title">Profielen</string>
-  <string name="profile_none">Geen</string>
-  <string name="profile_trust_agent_title">Profielen Trust-agent</string>
-  <string name="profile_trust_agent_summary">Hiermee kunnen profielen tijdelijk het vergrendelscherm uitschakelen</string>
-  <string name="trust_by_profile">Vertrouwd door profiel</string>
+    <string name="app_label">Profielen Trust-provider</string>
+    <string name="profile_picker_title">Profielen</string>
+    <string name="profile_none">Geen</string>
+    <string name="profile_trust_agent_title">Profielen Trust-agent</string>
+    <string name="profile_trust_agent_summary">Hiermee kunnen profielen tijdelijk het vergrendelscherm uitschakelen</string>
+    <string name="trust_by_profile">Vertrouwd door profiel</string>
 </resources>

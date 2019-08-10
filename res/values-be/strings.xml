@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Дастаўнік правераных профіляў</string>
-  <string name="profile_picker_title">Профілі</string>
-  <string name="profile_none">Няма</string>
-  <string name="profile_trust_agent_title">Агент правераных профіляў</string>
-  <string name="profile_trust_agent_summary">Дазваляе профілям адключаць экран блакавання</string>
-  <string name="trust_by_profile">Даверлівы профіль</string>
+    <string name="app_label">Дастаўнік правераных профіляў</string>
+    <string name="profile_picker_title">Профілі</string>
+    <string name="profile_none">Няма</string>
+    <string name="profile_trust_agent_title">Агент правераных профіляў</string>
+    <string name="profile_trust_agent_summary">Дазваляе профілям адключаць экран блакавання</string>
+    <string name="trust_by_profile">Даверлівы профіль</string>
 </resources>

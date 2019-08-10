@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">プロファイル信頼プロバイダ</string>
-  <string name="profile_picker_title">プロファイル</string>
-  <string name="profile_none">なし</string>
-  <string name="profile_trust_agent_title">プロファイル信頼エージェント</string>
-  <string name="profile_trust_agent_summary">ロック画面の保護を一時的に無効にすることをプロファイルに許可する</string>
-  <string name="trust_by_profile">プロファイルによって信頼されています</string>
+    <string name="app_label">プロファイル信頼プロバイダ</string>
+    <string name="profile_picker_title">プロファイル</string>
+    <string name="profile_none">なし</string>
+    <string name="profile_trust_agent_title">プロファイル信頼エージェント</string>
+    <string name="profile_trust_agent_summary">ロック画面の保護を一時的に無効にすることをプロファイルに許可する</string>
+    <string name="trust_by_profile">プロファイルによって信頼されています</string>
 </resources>

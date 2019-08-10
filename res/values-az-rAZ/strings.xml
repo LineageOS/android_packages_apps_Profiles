@@ -15,4 +15,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources></resources>
+<resources>
+    <string name="app_label">Profil Güvən Təchizatçısı</string>
+    <string name="profile_picker_title">Profillər</string>
+    <string name="profile_none">Heç biri</string>
+    <string name="profile_trust_agent_title">Profil Güvən Agenti</string>
+    <string name="profile_trust_agent_summary">Profillərin, kilid ekranı qorumasını müvəqqəti olaraq sıradan çıxartmasına icazə verər</string>
+    <string name="trust_by_profile">Profil tərəfindən güvənilən</string>
+</resources>

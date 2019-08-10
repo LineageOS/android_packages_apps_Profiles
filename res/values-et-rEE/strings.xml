@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_label">Profiilide Usaldaja Pakkuja</string>
-  <string name="profile_picker_title">Profiilid</string>
-  <string name="profile_none">Puudub</string>
-  <string name="profile_trust_agent_title">Profiilide Usaldaja Agent</string>
-  <string name="profile_trust_agent_summary">Lubab Profiilidel ajutiselt lülitada välja lukustusekraani kaitse</string>
-  <string name="trust_by_profile">Lubatud Profiili poolt</string>
+    <string name="app_label">Profiilide Usaldaja Pakkuja</string>
+    <string name="profile_picker_title">Profiilid</string>
+    <string name="profile_none">Puudub</string>
+    <string name="profile_trust_agent_title">Profiilide Usaldaja Agent</string>
+    <string name="profile_trust_agent_summary">Lubab Profiilidel ajutiselt lülitada välja lukustusekraani kaitse</string>
+    <string name="trust_by_profile">Lubatud Profiili poolt</string>
 </resources>

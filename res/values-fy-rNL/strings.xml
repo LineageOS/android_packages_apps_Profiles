@@ -15,4 +15,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources></resources>
+<resources>
+    <string name="app_label">Profilen Trust-provider</string>
+    <string name="profile_picker_title">Profilen</string>
+    <string name="profile_none">Gjin</string>
+    <string name="profile_trust_agent_title">Profilen Trust-agent</string>
+    <string name="profile_trust_agent_summary">Hjirmei kinne profilen tydlik it beskoattelskerm útskeakelje</string>
+    <string name="trust_by_profile">Fertroud troch profyl</string>
+</resources>
