@@ -19,6 +19,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
+<<<<<<< HEAD   (10b75d Automatic translation import)
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v4 \
     android-support-v7-appcompat \
@@ -31,6 +32,10 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_USE_AAPT2 := true
+=======
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    org.lineageos.platform.sdk
+>>>>>>> CHANGE (c46b18 Revert "Profiles: explicitly include android support libs")
 
 LOCAL_MODULE_TAGS := optional
 
