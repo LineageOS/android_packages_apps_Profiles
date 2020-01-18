@@ -21,6 +21,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.UserHandle;
 import com.android.internal.widget.LockPatternUtils;
 
 import java.util.ArrayList;
@@ -38,14 +39,15 @@ public class StartUpReceiver extends BroadcastReceiver {
         LockPatternUtils lockUtils = new LockPatternUtils(context);
         ComponentName profileTrustAgent = new ComponentName(context, ProfilesTrustAgent.class);
 
-        /*List<ComponentName> enabledTrustAgents = lockUtils.getEnabledTrustAgents();
+        List<ComponentName> enabledTrustAgents =
+                lockUtils.getEnabledTrustAgents(UserHandle.USER_SYSTEM);
         if (enabledTrustAgents == null) {
             enabledTrustAgents = new ArrayList<>();
         }
         if (!enabledTrustAgents.contains(profileTrustAgent)) {
             enabledTrustAgents.add(profileTrustAgent);
-            lockUtils.setEnabledTrustAgents(enabledTrustAgents);
-        }*/
+            lockUtils.setEnabledTrustAgents(enabledTrustAgents, UserHandle.USER_SYSTEM);
+        }
 
         // disable the receiver once it has enabled ProfilesTrustAgent
         ComponentName name = new ComponentName(context, StartUpReceiver.class);
