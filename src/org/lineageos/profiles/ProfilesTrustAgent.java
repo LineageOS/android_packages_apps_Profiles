@@ -1,5 +1,6 @@
 /*
 * Copyright (C) 2015 The CyanogenMod Project
+*               2020 The LineageOS Project
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,6 +17,7 @@
 
 package org.lineageos.profiles;
 
+import android.app.admin.DevicePolicyManager;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
@@ -122,12 +124,12 @@ public class ProfilesTrustAgent extends TrustAgentService {
     }
 
     private void handleApplyCurrentProfileState() {
-        /*final DevicePolicyManager devicePolicyManager =
+        final DevicePolicyManager devicePolicyManager =
                 (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
         if (devicePolicyManager != null && devicePolicyManager.requireSecureKeyguard()) {
             revokeTrust();
             return;
-        }*/
+        }
 
         Profile p = mProfileManager.getActiveProfile();
         int lockscreenState = p != null ? p.getScreenLockMode().getValue()
