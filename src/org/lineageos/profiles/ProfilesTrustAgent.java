@@ -124,7 +124,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
 
     private void handleApplyCurrentProfileState() {
         final DevicePolicyManager devicePolicyManager =
-                (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
+                getSystemService(DevicePolicyManager.class);
         if (devicePolicyManager != null && devicePolicyManager.requireSecureKeyguard()) {
             revokeTrust();
             return;
@@ -229,7 +229,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
     }
 
     private String getActiveSSID() {
-        final WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        final WifiManager wifiManager = getSystemService(WifiManager.class);
         WifiInfo wifiinfo = wifiManager.getConnectionInfo();
         if (wifiinfo == null) {
             return null;
