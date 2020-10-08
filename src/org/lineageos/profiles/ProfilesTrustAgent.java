@@ -28,7 +28,6 @@ import android.database.ContentObserver;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.net.wifi.WifiSsid;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -235,11 +234,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
         if (wifiinfo == null) {
             return null;
         }
-        WifiSsid ssid = wifiinfo.getWifiSsid();
-        if (ssid == null) {
-            return null;
-        }
-        return ssid.toString();
+        return wifiinfo.getSSID();
     }
 
     private void onTrustAgentCreated() {
