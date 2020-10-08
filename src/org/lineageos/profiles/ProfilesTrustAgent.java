@@ -28,7 +28,6 @@ import android.database.ContentObserver;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.net.wifi.WifiSsid;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -229,17 +228,23 @@ public class ProfilesTrustAgent extends TrustAgentService {
         return false;
     }
 
+    private String removeDoubleQuotes(String string) {
+        final int length = string.length();
+        if (length >= 2) {
+            if (string.startsWith("\"") && string.endsWith("\"")) {
+                return string.substring(1, length - 1);
+            }
+        }
+        return string;
+    }
+
     private String getActiveSSID() {
         final WifiManager wifiManager = getSystemService(WifiManager.class);
         WifiInfo wifiinfo = wifiManager.getConnectionInfo();
         if (wifiinfo == null) {
             return null;
         }
-        WifiSsid ssid = wifiinfo.getWifiSsid();
-        if (ssid == null) {
-            return null;
-        }
-        return ssid.toString();
+        return removeDoubleQuotes(wifiinfo.getSSID());
     }
 
     private void onTrustAgentCreated() {
