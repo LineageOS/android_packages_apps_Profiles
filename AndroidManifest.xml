@@ -43,7 +43,7 @@
                        android:resource="@xml/profiles_trust_agent"/>
         </service>
 
-        <receiver android:name=".StartUpReceiver">
+        <receiver android:name=".StartUpReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
@@ -51,7 +51,8 @@
 
         <activity android:name=".ProfilePickerActivity"
                   android:theme="@*android:style/Theme.Material.Dialog.Alert"
-                  android:excludeFromRecents="true">
+                  android:excludeFromRecents="true"
+                  android:exported="true">
             <intent-filter>
                 <action android:name="lineageos.platform.intent.action.PROFILE_PICKER" />
                 <category android:name="android.intent.category.DEFAULT" />
