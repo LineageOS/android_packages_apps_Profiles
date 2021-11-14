@@ -25,5 +25,5 @@ android_app {
 
     certificate: "platform",
     platform_apis: true,
-
+    system_ext_specific: true,
 }
