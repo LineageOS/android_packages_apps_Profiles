@@ -30,10 +30,6 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_label">Profiler Tillids-Leverandør</string>
-    <string name="profile_picker_title">Profiler</string>
-    <string name="profile_none">Ingen</string>
-    <string name="profile_trust_agent_title">Profiler Tillids-Agent</string>
-    <string name="profile_trust_agent_summary">Tillader Profiler midlertidigt at deaktivere låseskærm-beskyttelse</string>
-    <string name="trust_by_profile">Betroet af Profil</string>
+    <string name="profile_picker_title">Profiller</string>
+    <string name="profile_none">Keen</string>
 </resources>
