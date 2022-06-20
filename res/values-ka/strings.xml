@@ -16,6 +16,8 @@
 -->
 <resources>
     <string name="app_label">პროფილების სანდო მომწოდებელი</string>
+    <string name="profile_picker_title">პროფილები</string>
+    <string name="profile_none">არცერთი</string>
     <string name="profile_trust_agent_title">პროფილების სანდო წარმომადგენელი</string>
     <string name="profile_trust_agent_summary">საშუალებას აძლევს პროფილებს დროებით გამორთოს ეკრანის ჩამკეტის დაცვა</string>
     <string name="trust_by_profile">პროფილით დამოწმებული</string>

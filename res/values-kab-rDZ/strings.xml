@@ -15,5 +15,8 @@
      limitations under the License.
 -->
 <resources>
+    <string name="profile_picker_title">Imuɣna</string>
+    <string name="profile_none">Ula yiwen</string>
+    <string name="profile_trust_agent_summary">Sireg imeɣna ad sensen asewḥel n ugdil i kra n wakud</string>
     <string name="trust_by_profile">Ittwamen s umaɣnu</string>
 </resources>
