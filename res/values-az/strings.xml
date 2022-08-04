@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_label">Profil Güvən Təchizatçısı</string>
+    <string name="app_label">Profil Güvən Provayderi</string>
     <string name="profile_picker_title">Profillər</string>
     <string name="profile_none">Heç biri</string>
     <string name="profile_trust_agent_title">Profil Güvən Agenti</string>
