@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d27f881d_754c0b42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25983
+      },
+      "writtenOn": "2022-09-30T14:13:35Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e would prefer manifest change alone, i think it\u0027s better to let it throw exception and crash just so that anyone notices it. .\n\n\nThe issue is that it crashed even with manifest change. I don\u0027t understand why but the crash messsage aboved happened with BLUETOOTH_CONNECT.\n\nI\u0027m quite sure it happens if:\n- I\u0027m disconnected from my Pinetime\n- I reboot the phone\n- Bluetooth autoconnect Pinetime and Profiles crash\n\nBTW, If I reboot the phone while Pinetime connected, it does not crash on boot.",
+      "revId": "523d8041cb371016ea8d702d49424b0ed88ff17c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
