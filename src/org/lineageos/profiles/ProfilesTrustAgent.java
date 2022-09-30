@@ -210,18 +210,22 @@ public class ProfilesTrustAgent extends TrustAgentService {
                         return true;
                     }
                 }
-                BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-                Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
-                Set<String> connectedBTDevices = new ArraySet<>();
-                for (BluetoothDevice device : pairedDevices) {
-                    if (device.isConnected()) connectedBTDevices.add(device.getAddress());
-                }
-                for (Profile.ProfileTrigger trigger
-                        : activeProfile.getTriggersFromType(Profile.TriggerType.BLUETOOTH)) {
-                    if (connectedBTDevices.contains(trigger.getId())
-                            && trigger.getState() == Profile.TriggerState.ON_CONNECT) {
-                        return true;
+                try {
+                    BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                    Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+                    Set<String> connectedBTDevices = new ArraySet<>();
+                    for (BluetoothDevice device : pairedDevices) {
+                        if (device.isConnected()) connectedBTDevices.add(device.getAddress());
                     }
+                    for (Profile.ProfileTrigger trigger
+                            : activeProfile.getTriggersFromType(Profile.TriggerType.BLUETOOTH)) {
+                        if (connectedBTDevices.contains(trigger.getId())
+                                && trigger.getState() == Profile.TriggerState.ON_CONNECT) {
+                            return true;
+                        }
+                    }
+                } catch (SecurityException e) {
+                    Log.w(TAG, "Unable to get paired devices from Bluetooth adapter", e);
                 }
             }
         }
