@@ -22,6 +22,23 @@
       },
       "revId": "da6dd55650d5d551ae976d9fab9cec201ab0904e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f5fba56_c72c3181",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-11-03T12:20:25Z",
+      "side": 1,
+      "message": "https://developer.android.com/guide/topics/connectivity/bluetooth/permissions. \"The following code snippet demonstrates how to declare Bluetooth-related permissions in your app if it targets Android 12 or higher\", which seems to be the case of this app?",
+      "revId": "da6dd55650d5d551ae976d9fab9cec201ab0904e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
