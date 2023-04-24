@@ -15,6 +15,10 @@
      limitations under the License.
 -->
 <resources>
-    <string name="profile_picker_title">Профілі</string>
-    <string name="profile_none">Няма</string>
+    <string name="app_label">Furnidôr atendibilitât profîi</string>
+    <string name="profile_picker_title">Profîi</string>
+    <string name="profile_none">Nissun</string>
+    <string name="profile_trust_agent_title">Agjent atendibilitât profîi</string>
+    <string name="profile_trust_agent_summary">Al permet a Profîi di disativâ in mût temporani la protezion dal bloc schermi</string>
+    <string name="trust_by_profile">Atendibil dal profîl</string>
 </resources>
