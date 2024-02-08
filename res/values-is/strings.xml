@@ -15,10 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_label">Profiilide Trust-pakkuja</string>
-    <string name="profile_picker_title">Profiilid</string>
-    <string name="profile_none">Puudub</string>
-    <string name="profile_trust_agent_title">Profiilide Trust-agent</string>
-    <string name="profile_trust_agent_summary">Lubab Profiilidel ajutiselt lülitada välja lukustusekraani kaitse</string>
-    <string name="trust_by_profile">Profiili poolt lubatud</string>
+    <string name="profile_picker_title">Notandasnið</string>
+    <string name="profile_none">Ekkert</string>
 </resources>
