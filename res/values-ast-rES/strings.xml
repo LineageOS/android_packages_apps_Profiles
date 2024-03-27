@@ -17,6 +17,7 @@
 <resources>
     <string name="app_label">Fornidor de perfiles d\'enfotu</string>
     <string name="profile_picker_title">Perfiles</string>
+    <string name="profile_none">Nengún</string>
     <string name="profile_trust_agent_title">Axente de perfiles d\'enfotu</string>
-    <string name="profile_trust_agent_summary">Permite que «Perfiles» desactiven temporalmente la proteición de la pantalla de bloquéu</string>
+    <string name="profile_trust_agent_summary">Permite que «Perfiles» desactive temporalmente la proteición de la pantalla de bloquéu</string>
 </resources>
