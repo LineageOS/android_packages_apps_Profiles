@@ -1,6 +1,6 @@
 /*
 * Copyright (C) 2015 The CyanogenMod Project
-*               2020 The LineageOS Project
+*               2020-2024 The LineageOS Project
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,8 +18,8 @@
 package org.lineageos.profiles;
 
 import android.app.admin.DevicePolicyManager;
-import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -76,6 +76,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
         }
     };
 
+    private BluetoothManager mBluetoothManager;
     private ProfileManager mProfileManager;
     private ProfileHandler mHandler;
     private SystemProfilesSettingsObserver mObserver;
@@ -101,6 +102,7 @@ public class ProfilesTrustAgent extends TrustAgentService {
                     false, mObserver);
             mHandler.sendEmptyMessage(MSG_ON_AGENT_CREATED);
         }
+        mBluetoothManager = getSystemService(BluetoothManager.class);
     }
 
     @Override
@@ -176,8 +178,8 @@ public class ProfilesTrustAgent extends TrustAgentService {
                         return true;
                     }
 
-                    BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-                    Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+                    Set<BluetoothDevice> pairedDevices = mBluetoothManager.getAdapter()
+                            .getBondedDevices();
                     Set<String> connectedBTDevices = new ArraySet<>();
                     for (BluetoothDevice device : pairedDevices) {
                         if (device.isConnected()) connectedBTDevices.add(device.getAddress());
@@ -210,8 +212,8 @@ public class ProfilesTrustAgent extends TrustAgentService {
                         return true;
                     }
                 }
-                BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-                Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+                Set<BluetoothDevice> pairedDevices = mBluetoothManager.getAdapter()
+                        .getBondedDevices();
                 Set<String> connectedBTDevices = new ArraySet<>();
                 for (BluetoothDevice device : pairedDevices) {
                     if (device.isConnected()) connectedBTDevices.add(device.getAddress());
