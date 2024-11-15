@@ -1,5 +1,6 @@
 //
 // Copyright (C) 2015 The CyanogenMod Project
+// Copyright (C) 2024 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -26,4 +27,24 @@ android_app {
     certificate: "platform",
     platform_apis: true,
     system_ext_specific: true,
+    required: [
+        "default-permissions_org.lineageos.profiles",
+        "privapp_whitelist_org.lineageos.profiles-ext"
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_org.lineageos.profiles-ext",
+    system_ext_specific: true,
+    src: "privapp_whitelist_org.lineageos.profiles-ext.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "default-permissions_org.lineageos.profiles",
+    system_ext_specific: true,
+    src: "default-permissions_org.lineageos.profiles.xml",
+    sub_dir: "default-permissions",
+    filename_from_src: true,
 }
