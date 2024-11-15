@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45a58175_9b9c8c8d",
+        "filename": "src/org/lineageos/profiles/ProfilesTrustAgent.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-15T21:53:55Z",
+      "side": 1,
+      "message": "Can\u0027t it be removed? Note: I am on mobile.",
+      "revId": "f1429e04defd8d24d43f91a4ecd5026ec31087fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
