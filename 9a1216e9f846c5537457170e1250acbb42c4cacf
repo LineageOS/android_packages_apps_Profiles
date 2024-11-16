@@ -34,6 +34,24 @@
       "parentUuid": "80a7a898_41710e0a",
       "revId": "9a1216e9f846c5537457170e1250acbb42c4cacf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3374dc5a_915d22bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2024-11-16T15:09:40Z",
+      "side": 1,
+      "message": "Can we use `privapp_allowlist_org.lineageos.profiles-ext.xml` instead?",
+      "parentUuid": "93b736d2_79a83b8a",
+      "revId": "9a1216e9f846c5537457170e1250acbb42c4cacf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
