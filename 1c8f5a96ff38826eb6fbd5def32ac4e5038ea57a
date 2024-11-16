@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7cba3821_fb26f2ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-11-16T13:31:40Z",
+      "side": 1,
+      "message": "Done. Note that I explicitly didn\u0027t get BluetoothAdapter in onCreate as well since the adapter could be subject to change (atm it\u0027s always just that one, but this is more future proof)",
+      "revId": "1c8f5a96ff38826eb6fbd5def32ac4e5038ea57a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
