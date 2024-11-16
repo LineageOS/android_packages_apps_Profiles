@@ -52,6 +52,23 @@
       "parentUuid": "93b736d2_79a83b8a",
       "revId": "9a1216e9f846c5537457170e1250acbb42c4cacf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6184023f_4cec6a31",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-11-16T15:48:27Z",
+      "side": 1,
+      "message": "This is still not pregranting the permission resulting in the same crash as without the patch",
+      "revId": "9a1216e9f846c5537457170e1250acbb42c4cacf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
