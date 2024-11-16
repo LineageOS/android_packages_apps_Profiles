@@ -16,6 +16,24 @@
       "message": "https://paste.crdroid.net/9UCvVP",
       "revId": "9a1216e9f846c5537457170e1250acbb42c4cacf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93b736d2_79a83b8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-16T13:44:25Z",
+      "side": 1,
+      "message": "I take it that this was before the patch, since you verified it?",
+      "parentUuid": "80a7a898_41710e0a",
+      "revId": "9a1216e9f846c5537457170e1250acbb42c4cacf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
