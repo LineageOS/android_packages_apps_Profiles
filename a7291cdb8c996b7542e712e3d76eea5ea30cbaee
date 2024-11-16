@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "973e0b58_40f7016f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-16T11:17:47Z",
+      "side": 1,
+      "message": "In this case I would prefer to make is a member variable and initialize it once during onCreate().",
+      "revId": "a7291cdb8c996b7542e712e3d76eea5ea30cbaee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
