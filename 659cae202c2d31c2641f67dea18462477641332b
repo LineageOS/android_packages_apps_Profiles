@@ -16,6 +16,23 @@
       "message": "Turns out this patch works fine but currently only triggers on upgrade (and will trigger on incrementals in the future after https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/408804 )",
       "revId": "659cae202c2d31c2641f67dea18462477641332b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c98d9c5_2dd5c0a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-11-18T20:49:59Z",
+      "side": 1,
+      "message": "Fixes https://gitlab.com/LineageOS/issues/android/-/issues/7850",
+      "revId": "659cae202c2d31c2641f67dea18462477641332b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
