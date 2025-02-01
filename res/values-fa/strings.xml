@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="profile_trust_agent_title">پروفایل عامل اعتماد</string>
+    <string name="profile_trust_agent_summary">به نمایه ها اجازه دهید که به طور موقت محافظت قفل صفحه را غیر فعال کنند</string>
+    <string name="trust_by_profile">مورد اعتماد نمایه</string>
+</resources>
