@@ -15,6 +15,9 @@
      limitations under the License.
 -->
 <resources>
+    <string name="app_label">نمایه ارائه دهنده اعتماد</string>
+    <string name="profile_picker_title">نمایه ها</string>
+    <string name="profile_none">هیچ کدام</string>
     <string name="profile_trust_agent_title">پروفایل عامل اعتماد</string>
     <string name="profile_trust_agent_summary">به نمایه ها اجازه دهید که به طور موقت محافظت قفل صفحه را غیر فعال کنند</string>
     <string name="trust_by_profile">مورد اعتماد نمایه</string>
