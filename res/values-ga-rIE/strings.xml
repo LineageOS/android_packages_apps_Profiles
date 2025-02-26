@@ -15,9 +15,10 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_label">Fornidor de perfiles d\'enfotu</string>
-    <string name="profile_picker_title">Perfiles</string>
-    <string name="profile_none">Nengún</string>
-    <string name="profile_trust_agent_title">Axente de perfiles d\'enfotu</string>
-    <string name="profile_trust_agent_summary">Permite que «Perfiles» desactive temporalmente la proteición de la pantalla de bloquéu</string>
+    <string name="app_label">Soláthraí Iontaobhais Próifílí</string>
+    <string name="profile_picker_title">Próifílí</string>
+    <string name="profile_none">Dada</string>
+    <string name="profile_trust_agent_title">Gníomhaire Iontaobhais Próifílí</string>
+    <string name="profile_trust_agent_summary">Ligeann sé do Phróifílí cosaint scáileáin ghlais a dhíchumasú go sealadach</string>
+    <string name="trust_by_profile">Iontaofa ag Próifíl</string>
 </resources>

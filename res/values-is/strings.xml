@@ -15,6 +15,10 @@
      limitations under the License.
 -->
 <resources>
+    <string name="app_label">Þjónustuveita fyrir traust á sniðum</string>
     <string name="profile_picker_title">Notandasnið</string>
     <string name="profile_none">Ekkert</string>
+    <string name="profile_trust_agent_title">Forrit fyrir traust á sniðum</string>
+    <string name="profile_trust_agent_summary">Leyfir sniðum að gera skjálæsingarvörn tímabundið óvirka</string>
+    <string name="trust_by_profile">Treyst af sniði</string>
 </resources>
