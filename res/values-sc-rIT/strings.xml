@@ -4,6 +4,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <string name="app_label">Frunidore de profilos de cunfiantza</string>
     <string name="profile_picker_title">Profilos</string>
     <string name="profile_none">Nudda</string>
+    <string name="profile_trust_agent_title">Agente de profilos de cunfiantza</string>
+    <string name="profile_trust_agent_summary">Permitit chi is profilos disativent in manera temporànea s\'amparu de s\'ischermu de blocu</string>
+    <string name="trust_by_profile">Fidadu dae unu profilu</string>
 </resources>
