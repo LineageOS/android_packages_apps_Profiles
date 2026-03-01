@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_label">Profilbasert tillitsleverandør</string>
+    <string name="profile_picker_title">Profilar</string>
+    <string name="profile_none">Ingen</string>
+    <string name="profile_trust_agent_title">Profilbasert tillitsagent</string>
+    <string name="profile_trust_agent_summary">Gjev profilar løyve til å deaktivera låseskjermen mellombels</string>
+    <string name="trust_by_profile">Stolar på profilen</string>
+</resources>
