@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_label">دەمنامە متمانەییەکانی دابینکەر</string>
+    <string name="profile_picker_title">دەمنامەکان</string>
+    <string name="profile_none">هیچیان</string>
+    <string name="profile_trust_agent_title">بریکاری متمانەی دەمنامەکان</string>
+    <string name="profile_trust_agent_summary">ڕێگەدان بە دەمنامەکان بۆ ناچالاککردنی کاتیی بۆ پاراستنی قوفڵی ڕوونما</string>
+    <string name="trust_by_profile">متمانەپێکراوە لەلایەن دەمنامەوە</string>
+</resources>
