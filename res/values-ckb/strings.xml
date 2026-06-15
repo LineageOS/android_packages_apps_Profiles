@@ -15,10 +15,10 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_label">دەمنامە متمانەییەکانی دابینکەر</string>
-    <string name="profile_picker_title">دەمنامەکان</string>
+    <string name="app_label">دابینکەری متمانەی پڕۆفایلەکان</string>
+    <string name="profile_picker_title">پڕۆفایلەکان</string>
     <string name="profile_none">هیچیان</string>
-    <string name="profile_trust_agent_title">بریکاری متمانەی دەمنامەکان</string>
-    <string name="profile_trust_agent_summary">ڕێگەدان بە دەمنامەکان بۆ ناچالاککردنی کاتیی بۆ پاراستنی قوفڵی ڕوونما</string>
-    <string name="trust_by_profile">متمانەپێکراوە لەلایەن دەمنامەوە</string>
+    <string name="profile_trust_agent_title">بریکاری متمانەی پڕۆفایلەکان</string>
+    <string name="profile_trust_agent_summary">ڕێگەدان بە پڕۆفایلەکان بۆ ناچالاککردنی کاتیی بۆ پاراستنی قوفڵی ڕوونما</string>
+    <string name="trust_by_profile">متمانەپێکراوە لەلایەن پڕۆفایلەوە</string>
 </resources>
